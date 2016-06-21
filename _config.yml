@@ -5,6 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+#Base settings
+encoding: utf-8
+ 
+
 # Site settings
 title: Your awesome title
 email: your-email@domain.com
