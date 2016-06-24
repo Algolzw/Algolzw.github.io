@@ -7,7 +7,8 @@ categoryies:	jekyll update
 Markdown
 ===========
 ----------------------
-##兼容html
+
+## 兼容html ##
 markdown 只对应一小部分的html标签。
 
 在其涵盖之外的所有标签都可以在文档中直接用HTML撰写
@@ -17,7 +18,7 @@ markdown 只对应一小部分的html标签。
 	<th>table in markdown</th>
 	<tr>
 		<td>
-			#Foo#
+			Foo
 		</td>
 	</tr>
 </table>
@@ -26,14 +27,14 @@ markdown 只对应一小部分的html标签。
 	
 在markdown格式的行中可以随意使用HTML标签（随个人喜好）。<br>
 
-##特殊字符转换##
+## 特殊字符转换 ##
 在HTML中，“<”和"&"两种字符需要特殊处理，"<"需要用&lt；表示，“&”需要使用&amp；来表示。
   
 在markdown中，则可以直接打出这些特殊符号，自动转换为实体。也可以打出实体形式，如：``&copy;``,会打印出"&copy;"符号。<br>
 
 	需要注意在code范围里，<和&符号都会被转为实体形式。
 
-##标题##
+## 标题 ##
 语法1:类Setext
 
 ``=``表示最高阶标题，``-``表示第二阶标题
@@ -57,7 +58,7 @@ Title 2
 ## 这是h2
 ### 这是h3
 ```
-##区块引用 Blockquotes
+## 区块引用 Blockquotes
 类似Email中使用``>``的引用方式，如
 
 ```
@@ -66,11 +67,11 @@ Title 2
 >make a choice
 ```
 效果：
->###hello
+>### hello
 >live or death
 >make a choice
 
-##列表##
+## 列表 ##
 无需列表使用星号、加号或减号作为列表标记：
 
 ```
@@ -135,8 +136,8 @@ def say():
 
 ***
 
-##区段元素##
-###链接###
+## 区段元素 ##
+### 链接 ###
 Markdown支持行内式和参考式两种链接语法，都使用[方括号]来标记。
 
 行内式：
@@ -166,7 +167,7 @@ Markdown支持行内式和参考式两种链接语法，都使用[方括号]来�
 	[foo]: http://www.xx.com/login/user/something/
 		"title in here"
 
-###强调###
+### 强调 ###
 Markdown 使用星号(`*`)和底线(`_`)作为强调字词的符号，一个`*`或`_`表示`<em>`,两个表示`<strong>`。
 
 	*single asterisks*
@@ -186,7 +187,7 @@ __double underscores__
 
 <img src="/images/1.jpeg" height="150">
 
-##Others##
+## Others ##
 
 
 * 我的github主页：<http://Algolzw.github.io>
