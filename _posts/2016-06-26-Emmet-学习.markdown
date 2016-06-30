@@ -1,0 +1,12 @@
+---
+layout:	post
+title:	"前段开发神器－Emmet"
+categories:	前端学习
+---
+
+## Emmet学习手册 ##
+
+Emmet前身为Zen coding，它使用仿css选择器来生成html代码，可以大大提高网页开发的编写速度
+
+
+
