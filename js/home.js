@@ -20,8 +20,6 @@ $(document).ready(function () {
             $("#content-title b").animate({color: '#FEFEFE'}, "fast");
         }, 8000);
     });
-
-
 });
 
 function timeShuffle(arr) {
