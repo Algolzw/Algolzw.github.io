@@ -185,12 +185,14 @@ _single underscores_
 
 __double underscores__ 
 
-<img src="/images/1.jpeg" height="150">
+<img src="{{ "/images/1.jpeg" | prepend: site.baseurl }}" height="150">
 
 ## Others ##
 
 
-* 我的github主页：<http://Algolzw.github.io>
+* 我的github主页：[永无岛][mygithub]
 * 我的常用邮箱：	 <algo_lzw@yahoo.com>
 
 *Thanks*
+
+[mygithub]: http://Algolzw.github.io

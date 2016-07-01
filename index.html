@@ -1,23 +1,27 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="wrapper content">
+    <header>
+        <h1 id="content-title">
+            <b>N</b>
+            <b>E</b>
+            <b>V</b>
+            <b>E</b>
+            <b>R</b>
+            <b>L</b>
+            <b>A</b>
+            <b>N</b>
+            <b>D</b>
+        </h1>
+    </header>
+    <section>
+        <div class="wrapper text-flash">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci delectus distinctio doloremque
+                ducimus, ipsum iste maxime, modi nobis odio officia optio perferendis perspiciatis placeat quasi,
+                repudiandae suscipit ullam. Distinctio, ullam?</p>
+        </div>
+    </section>
 
 </div>

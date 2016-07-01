@@ -6,8 +6,6 @@ categories:  jekyll update
 ---
 this is my study of using jekyll to build my blog
 
-## {title} ##
-
 >mysql、struts2、spring、hibernate、ibatis、algorithms
 
 {% highlight python %}
@@ -17,6 +15,13 @@ end
 print_hi("jet")
 #=> prints 'hello jet' to STDOUT.
 {% endhighlight %}
+
+```python
+# ...python_code
+def print_hello():
+    print('hello')
+
+```
 
 Check[Jekyll docs] for more information
 

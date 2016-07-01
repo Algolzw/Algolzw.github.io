@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "网页开发小技巧"
+date:   2016-06-30 10:17:00 +0800
+categories: 前端学习
+---
+
+>该篇文章主要记录平时遇到的一些有用的小技巧
+
+### 1、canonical标签 ###
+
+`'rel="canonical"`是google、雅虎、微软等搜索引擎推出的标签,
+主要用于解决由于内容相同而网址形式不同而造成的重复问题。如下:
+
+    http://www.example.com/index.html
+    http://www.example.com/index.html?pagecontent=true
+    http://www.example.com/index.html?useunicode=true
+
+这三个网址内容是相同的,但第一个才是我们想显示给搜索引擎的网址。
+这种情况搜索引擎很难区分那个才是主网址,因此会收录大量重复的内容。
+
+而使用`canonical`标签则可以让搜索引擎收录指定的网址。
+
+    <link rel="canonical" href="index.html">
+
+
+
+
