@@ -25,7 +25,7 @@ $(document).ready(function () {
 });
 
 function timeShuffle(arr) {
-    alert("time counts");
+    // alert("time counts");
     shuffle(arr);
     t = setTimeout(function () {
         timeShuffle(arr);
