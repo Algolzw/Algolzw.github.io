@@ -1,11 +1,204 @@
 ---
-layout: default
+layout: blank
 title:  关于我
 permalink:  /about_me/
 ---
 
-<div class="about">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa debitis eum excepturi incidunt itaque
-        molestiae molestias nesciunt, nihil officia pariatur quae rem rerum soluta suscipit vel vitae. Aliquam,
-        deserunt!</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>bootstrap-carousel</title>
+
+    <link rel="stylesheet" href="/ext_lib/bootstrap/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/css/about.css">
+
+</head>
+<body>
+
+<!-- Navbar
+=========================================================-->
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="{{ site.baseurl }}" class="navbar-brand">{{ site.title }}</a>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar">
+                    <div class="nav navbar-nav">
+                        <li>
+                            <a href="{{ "/article/" | prepend: site.baseurl }}" class="page-link">我的文章</a>
+                        </li>
+                        <li class="active">
+                            <a href="{{ "/about_me/" | prepend: site.baseurl }}" class="page-link">关于我</a>
+                        </li>
+                        <!--<li><a href="#">Contact</a></li>-->
+                        <!--<li class="dropdown">-->
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu" role="menu">-->
+                                <!--<li class="active"><a href="#">Action</a></li>-->
+                                <!--<li><a href="#">Other Action</a></li>-->
+                                <!--<li><a href="#">Something else</a></li>-->
+                                <!--<li class="nav-divider" role="separator"></li>-->
+                                <!--<li class="dropdown-header">Nav Header</li>-->
+                                <!--<li><a href="#">Separator Link</a></li>-->
+                                <!--<li><a href="#">One more link</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </div>
+
+<!-- Carousel
+=========================================================-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-tp="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="/images/galaxy.jpg" alt="First slide" class="first-slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>这只是一个bootstrap carousel的练习</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda distinctio ducimus earum eos illo ipsam magnam veniam.</p>
+                    <p><a href="#" class="btn btn-lg btn-default btn-success" role="button">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/images/phoneimg.jpg" alt="Second slide" class="second-slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>这只是一个bootstrap轮播的练习</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at ipsum modi non praesentium quae quia reiciendis? Illo!</p>
+                    <p><a href="#" class="btn btn-lg btn-default btn-success" role="button">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/images/zimeihu.jpg" alt="Third slide" class="third-slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>这只是一个bootstrap轮播的练习</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id ipsam omnis qui, quidem repellat rerum temporibus ut!</p>
+                    <p><a href="#" class="btn btn-lg btn-default btn-success" role="button">Browse gallery</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a href="#myCarousel" class="carousel-control right" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+
+<!-- wrapper the rest page messages
+=========================================================-->
+
+<div class="container marketing">
+
+    <!-- three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-md-4"><img src="/images/galaxy.jpg" alt="generic image" class="img-circle" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta esse fugiat in minus molestiae
+                molestias quis recusandae rerum unde.</p>
+            <p><a href="" class="btn btn-default btn-info">View details</a></p>
+        </div>
+        <div class="col-md-4"><img src="/images/phoneimg.jpg" alt="generic image" class="img-circle" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Autem, delectus enim exercitationem ipsa neque nulla sint! Cum deserunt distinctio doloremque est
+                incidunt natus necessitatibus nihil temporibus.</p>
+            <p><a href="" class="btn btn-default btn-info">View details</a></p>
+        </div>
+        <div class="col-md-4"><img src="/images/zimeihu.jpg" alt="generic image" class="img-circle" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Blanditiis consequuntur dicta dignissimos earum et ex fuga itaque laborum modi molestias quia quidem,
+                repellat reprehenderit saepe sapiente suscipit tenetur!</p>
+            <p><a href="" class="btn btn-default btn-info">View details</a></p>
+        </div>
+    </div>
+
+    <!-- start the featurettes -->
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading.<span class="text-muted">It'll below your mind.</span></h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at distinctio non odio
+                pariatur rem tempore unde voluptates?</p>
+        </div>
+        <div class="col-md-5">
+            <img src="/images/galaxy.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">First featurette heading.<span class="text-muted">See for yourself</span></h2>
+            <p class="lead">Adipisci asperiores corporis eius facilis impedit inventore maiores molestiae, nam
+                nostrum placeat quibusdam sit suscipit temporibus vitae voluptas?</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+            <img src="/images/phoneimg.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Commodi corporis delectus dicta distinctio dolor eos iste iusto modi molestias,
+                necessitatibus, non possimus sint tempora tenetur, voluptatum!</p>
+        </div>
+        <div class="col-md-5">
+            <img src="/images/zimeihu.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Algo</a></p>
+    </footer>
+</div>
+
+<script src="/ext_lib/jquery-3.0.0.min.js"></script>
+<script src="/ext_lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
