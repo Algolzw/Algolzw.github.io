@@ -9,7 +9,7 @@ permalink:  /about_me/
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>bootstrap-carousel</title>
+    <title>关于我</title>
 
     <link rel="stylesheet" href="/ext_lib/bootstrap/css/bootstrap.min.css">
 
@@ -41,7 +41,7 @@ permalink:  /about_me/
                 </div>
 
                 <div class="navbar-collapse collapse" id="navbar">
-                    <div class="nav navbar-nav">
+                    <div class="nav navbar-nav navbar-right">
                         <li>
                             <a href="{{ "/article/" | prepend: site.baseurl }}" class="page-link">我的文章</a>
                         </li>
@@ -75,10 +75,10 @@ permalink:  /about_me/
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-tp="2"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" id="carousel-inner" role="listbox">
         <div class="item active">
             <img src="/images/galaxy.jpg" alt="First slide" class="first-slide">
             <div class="container">
@@ -196,6 +196,12 @@ permalink:  /about_me/
 
 <script src="/ext_lib/jquery-3.0.0.min.js"></script>
 <script src="/ext_lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="/ext_lib/scrollmagic/TweenMax.min.js"></script>
+<script src="/ext_lib/scrollmagic/TimelineMax.min.js"></script>
+<script src="/ext_lib/scrollmagic/ScrollMagic.js"></script>
+<script src="/ext_lib/scrollmagic/plugins/animation.gsap.js"></script>
+<script src="/ext_lib/scrollmagic/plugins/debug.addIndicators.js"></script>
+<script src="/js/about.js"></script>
 </body>
 </html>
 

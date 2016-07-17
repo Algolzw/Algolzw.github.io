@@ -32,6 +32,10 @@ body{
     color:#efffef;
 }
 
+#navbar>.nav{
+    margin-right:5px;
+}
+
 /*carousel*/
 
 .carousel{
