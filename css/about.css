@@ -39,7 +39,7 @@ body{
 /*carousel*/
 
 .carousel{
-    height:500px;
+    min-height:500px;
     margin-bottom:60px;
 }
 
@@ -55,7 +55,7 @@ body{
 }
 
 .carousel .item{
-    height:500px;
+    min-height:500px;
     background-color:#777;
 }
 
