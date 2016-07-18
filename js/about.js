@@ -5,6 +5,15 @@ $(function () {
     //响应式图片
     $('.imgLiquid').imgLiquid();
 
+    $("#myCarousel").height($(window).height()*0.8);
+    $("#myCarousel .item").height($(window).height()*0.8);
+
+
+    window.onresize = function(){
+        $("#myCarousel").height($(window).height()*0.8);
+        $("#myCarousel .item").height($(window).height()*0.8);
+    }
+
     //定义滚动效果
     var controller = new ScrollMagic.Controller();
 
@@ -51,6 +60,7 @@ $(function () {
             $(this).css('background-image', "url(/images/self.jpg)");
         }
     );
+
 
 
 });
