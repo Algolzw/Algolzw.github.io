@@ -44,8 +44,14 @@ body{
 }
 
 .carousel-caption{
-    margin-bottom: 60px;
+    margin: 160px auto;
     z-index:10;
+}
+
+.carousel-caption p{
+    font-size:28px !important;
+    font-weight:500;
+    font-family: Monaco, Consolas, "Courier New", monospace;
 }
 
 .carousel .item{
@@ -61,33 +67,200 @@ body{
     height:500px;
 }
 
+.carousel-layer{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#8d8d8d;
+    opacity:.2;
+    filter:alpha(opacity:.2);
+}
 
 
 /*marketing*/
-.marketing .col-md-4{
+.marketing .col-md-8{
     margin-bottom:20px;
     text-align:center;
+}
+
+.portrait{
+    width:140px;
+    height:140px;
+    margin:0 auto;
+    cursor: pointer;
 }
 
 .marketing h2{
     font-weight:normal;
 }
 
-.marketing .col-md-4 p{
-    margin-left:10px;
-    margin-right:10px;
+.marketing .col-md-8 p{
+    margin:7px auto 0;
 }
+
+.self-intro>p:first-child{
+    margin-top:16px;
+}
+
+.self-intro,.self-intro+p{
+    line-height:26px;
+    color: #686868;
+
+}
+.self-intro b{
+    margin:0 6px;
+}
+.self-intro+p:nth-last-child(2),.self-intro b{
+    cursor: pointer;
+    transition:font-size .4s;
+}
+
+.self-intro+p:nth-last-child(2):hover,
+.self-intro b:hover{
+    font-size:20px;
+}
+
+
 
 /*featurettes*/
 
 .featurette-divider{
-    margin:80px 0;
+    margin:45px 0 50px;
 }
 
 .featurette-heading{
     font-weight:300;
     line-height:1;
     letter-spacing:-1px;
+}
+
+.timeline{
+    width:100%;
+    display: table;
+    text-align: center;
+}
+
+.timeline .title{
+    padding-bottom: 50px;
+    margin:20px;
+    font-size:28px;
+    font-weight:600;
+    font-family: "娃娃体-简", Helvetica, Arial, sans-serif;
+}
+
+.timeline .mainline{
+    width:6px;
+    height:1000px;
+    background-color: #cfd3d6;
+    margin:0 auto;
+    border-radius:4px;
+}
+
+.year{
+    background-color: #fff;
+    border: 1px solid #eeeff2;
+    border-radius: 5px;
+    color: #525558;
+    font-size: 14px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 30px;
+    margin: -10px 0 0 -27px;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+}
+
+.mainline .item{
+    position:absolute;
+    width:380px;
+    margin-left:-380px;
+}
+
+.mainline .item:hover .dot{
+    width:20px;
+    height:20px;
+    background-color:#0099e5;
+    margin-left:-7px;
+    margin-top:-3px;
+}
+
+.mainline .item:hover .month{
+    color:#0099e5;
+    margin-left:17px;
+}
+
+.mainline .dot{
+    background-color: #bfc3c6;
+    border:2px solid #f7f9fa;
+    border-radius:14px;
+    position:absolute;
+    width:14px;
+    height:14px;
+    z-index:2;
+    left:380px;
+    margin-left:-4px;
+    transition:all .1s ease-in-out 0s;
+}
+
+.mainline .month{
+    color:#71767a;
+    position:absolute;
+    width:40px;
+    left:380px;
+    top:-1px;
+    margin:-1px 15px 0;
+    font-size:14px;
+    text-align:left;
+    transition:all .1s ease-in-out;
+}
+
+
+.mainline .detail::after{
+    background-color: #cfd3d6;
+    content:" ";
+    position: absolute;
+    width:80px;
+    height:3px;
+    display:block;
+    top:18px;
+    right:-80px;
+}
+
+.mainline .detail.large{
+    border: medium none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+    height: 190px;
+    min-width: 280px;
+    padding: 0;
+    text-align: left;
+}
+
+
+.mainline .detail{
+    background:#fff;
+    border:1px solid #eeeff2;
+    border-radius:4px;
+    color:#222;
+    display:inline-block;
+    max-width:280px;
+    min-height:40px;
+    float:right;
+    margin:-12px 80px 0 -5px;
+    line-height:1.4em;
+    position:relative;
+}
+
+.mainline .detail .text{
+    background:rgba(0,0,0,0) linear-gradient(to bottom,rgba(50,50,50,.3) 0%,transparent 100%) repeat scroll 0 0;
+    padding:8px 14px;
+    width:100%;
+    height:50px;
+    display:block;
+    color:#fff;
+    font:normal 15px/20px "楷体-简",Helvetica, Arial, sans-serif ;
 }
 
 

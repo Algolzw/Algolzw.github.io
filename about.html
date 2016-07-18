@@ -31,7 +31,8 @@ permalink:  /about_me/
         <nav class="navbar navbar-inverse navbar-static-top ">
             <div class="container">
                 <div class="navbar-header">
-                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -50,16 +51,16 @@ permalink:  /about_me/
                         </li>
                         <!--<li><a href="#">Contact</a></li>-->
                         <!--<li class="dropdown">-->
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
-                            <!--<ul class="dropdown-menu" role="menu">-->
-                                <!--<li class="active"><a href="#">Action</a></li>-->
-                                <!--<li><a href="#">Other Action</a></li>-->
-                                <!--<li><a href="#">Something else</a></li>-->
-                                <!--<li class="nav-divider" role="separator"></li>-->
-                                <!--<li class="dropdown-header">Nav Header</li>-->
-                                <!--<li><a href="#">Separator Link</a></li>-->
-                                <!--<li><a href="#">One more link</a></li>-->
-                            <!--</ul>-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu" role="menu">-->
+                        <!--<li class="active"><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Other Action</a></li>-->
+                        <!--<li><a href="#">Something else</a></li>-->
+                        <!--<li class="nav-divider" role="separator"></li>-->
+                        <!--<li class="dropdown-header">Nav Header</li>-->
+                        <!--<li><a href="#">Separator Link</a></li>-->
+                        <!--<li><a href="#">One more link</a></li>-->
+                        <!--</ul>-->
                         <!--</li>-->
                     </div>
                 </div>
@@ -76,50 +77,39 @@ permalink:  /about_me/
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <div class="carousel-inner" id="carousel-inner" role="listbox">
-        <div class="item active">
+        <div class="item imgLiquid active">
+            <img src="/images/1.jpeg" alt="zero slide">
+        </div>
+        <div class="item imgLiquid">
             <img src="/images/galaxy.jpg" alt="First slide" class="first-slide">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>这只是一个bootstrap carousel的练习</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda distinctio ducimus earum eos illo ipsam magnam veniam.</p>
-                    <p><a href="#" class="btn btn-lg btn-default btn-success" role="button">Learn more</a></p>
-                </div>
-            </div>
         </div>
-        <div class="item">
+        <div class="item imgLiquid">
             <img src="/images/phoneimg.jpg" alt="Second slide" class="second-slide">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>这只是一个bootstrap轮播的练习</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at ipsum modi non praesentium quae quia reiciendis? Illo!</p>
-                    <p><a href="#" class="btn btn-lg btn-default btn-success" role="button">Sign up</a></p>
-                </div>
-            </div>
         </div>
-        <div class="item">
+        <div class="item imgLiquid">
             <img src="/images/zimeihu.jpg" alt="Third slide" class="third-slide">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>这只是一个bootstrap轮播的练习</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id ipsam omnis qui, quidem repellat rerum temporibus ut!</p>
-                    <p><a href="#" class="btn btn-lg btn-default btn-success" role="button">Browse gallery</a></p>
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="carousel-layer"></div>
+    <div class="container">
+        <div class="carousel-caption">
+            <p>All children,except one,group up.</p>
         </div>
     </div>
 
-    <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
+    <!--<a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">-->
+    <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+    <!--<span class="sr-only">Previous</span>-->
+    <!--</a>-->
 
-    <a href="#myCarousel" class="carousel-control right" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-    </a>
+    <!--<a href="#myCarousel" class="carousel-control right" role="button" data-slide="next">-->
+    <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+    <!--<span class="sr-only">Next</span>-->
+    <!--</a>-->
 
 </div>
 
@@ -130,61 +120,77 @@ permalink:  /about_me/
 
     <!-- three columns of text below the carousel -->
     <div class="row">
-        <div class="col-md-4"><img src="/images/galaxy.jpg" alt="generic image" class="img-circle" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta esse fugiat in minus molestiae
-                molestias quis recusandae rerum unde.</p>
-            <p><a href="" class="btn btn-default btn-info">View details</a></p>
-        </div>
-        <div class="col-md-4"><img src="/images/phoneimg.jpg" alt="generic image" class="img-circle" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Autem, delectus enim exercitationem ipsa neque nulla sint! Cum deserunt distinctio doloremque est
-                incidunt natus necessitatibus nihil temporibus.</p>
-            <p><a href="" class="btn btn-default btn-info">View details</a></p>
-        </div>
-        <div class="col-md-4"><img src="/images/zimeihu.jpg" alt="generic image" class="img-circle" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Blanditiis consequuntur dicta dignissimos earum et ex fuga itaque laborum modi molestias quia quidem,
-                repellat reprehenderit saepe sapiente suscipit tenetur!</p>
-            <p><a href="" class="btn btn-default btn-info">View details</a></p>
+        <div class="col-md-8 col-md-push-2">
+
+            <div class="imgLiquid img-circle portrait">
+                <img src="/images/self.jpg" alt="generic image">
+            </div>
+            <div class="self-intro">
+                <p><b>幻想主义</b> <b>拖延症晚期</b> <b>乐观派</b></p>
+                <p><b>冒险者</b> <b>徒步爱好者</b> <b>摄影学徒</b> <b>程序员</b></p>
+            </div>
+            <p>Renshe Ngrux I, Qua Nka OyanJ I. Renshe Ngkud Ua N,Jish I Xin Gle.</p>
+            <!--<p><a href="https://github.com/{{ include.username }}" class="btn btn-default btn-info">Github</a></p>-->
         </div>
     </div>
 
     <!-- start the featurettes -->
 
     <hr class="featurette-divider">
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading.<span class="text-muted">It'll below your mind.</span></h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at distinctio non odio
-                pariatur rem tempore unde voluptates?</p>
+
+    <section>
+        <div class="row">
+            <div class="col-md-10 col-md-push-1">
+                <div class="timeline">
+                    <h2 class="title">我的近代发展史</h2>
+                    <div class="mainline">
+                        <div class="year" style="top:100px;">1993</div>
+                        <div class="item clearfix" style="top: 150px;">
+                            <div class="dot"></div>
+                            <div class="month">Oct</div>
+                            <div class="detail large imgLiquid">
+                                <img src="/images/timeline/1.jpg" alt="born">
+                                <div class="text">我出生了</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-5">
-            <img src="/images/galaxy.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">
-        </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">First featurette heading.<span class="text-muted">See for yourself</span></h2>
-            <p class="lead">Adipisci asperiores corporis eius facilis impedit inventore maiores molestiae, nam
-                nostrum placeat quibusdam sit suscipit temporibus vitae voluptas?</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-            <img src="/images/phoneimg.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">
-        </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Commodi corporis delectus dicta distinctio dolor eos iste iusto modi molestias,
-                necessitatibus, non possimus sint tempora tenetur, voluptatum!</p>
-        </div>
-        <div class="col-md-5">
-            <img src="/images/zimeihu.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">
-        </div>
-    </div>
+    </section>
+
+    <!--<div class="row featurette">-->
+    <!--<div class="col-md-7">-->
+    <!--<h2 class="featurette-heading">First featurette heading.<span class="text-muted">It'll below your mind.</span></h2>-->
+    <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at distinctio non odio-->
+    <!--pariatur rem tempore unde voluptates?</p>-->
+    <!--</div>-->
+    <!--<div class="col-md-5">-->
+    <!--<img src="/images/galaxy.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<hr class="featurette-divider">-->
+    <!--<div class="row featurette">-->
+    <!--<div class="col-md-7 col-md-push-5">-->
+    <!--<h2 class="featurette-heading">First featurette heading.<span class="text-muted">See for yourself</span></h2>-->
+    <!--<p class="lead">Adipisci asperiores corporis eius facilis impedit inventore maiores molestiae, nam-->
+    <!--nostrum placeat quibusdam sit suscipit temporibus vitae voluptas?</p>-->
+    <!--</div>-->
+    <!--<div class="col-md-5 col-md-pull-7">-->
+    <!--<img src="/images/phoneimg.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<hr class="featurette-divider">-->
+    <!--<div class="row featurette">-->
+    <!--<div class="col-md-7">-->
+    <!--<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>-->
+    <!--<p class="lead">Commodi corporis delectus dicta distinctio dolor eos iste iusto modi molestias,-->
+    <!--necessitatibus, non possimus sint tempora tenetur, voluptatum!</p>-->
+    <!--</div>-->
+    <!--<div class="col-md-5">-->
+    <!--<img src="/images/zimeihu.jpg" alt="" class="featurette-image img-responsive img-thumbnail center-block">-->
+    <!--</div>-->
+    <!--</div>-->
 
     <hr class="featurette-divider">
 
@@ -194,8 +200,11 @@ permalink:  /about_me/
     </footer>
 </div>
 
-<script src="/ext_lib/jquery-3.0.0.min.js"></script>
+<script src="/ext_lib/jquery.min.js"></script>
+<script src="/ext_lib/plugins/jquery.mobile-1.4.5.js"></script>
+<script src="/ext_lib/jquery.color-2.1.2.js"></script>
 <script src="/ext_lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="/ext_lib/plugins/imgLiquid-min.js"></script>
 <script src="/ext_lib/scrollmagic/TweenMax.min.js"></script>
 <script src="/ext_lib/scrollmagic/TimelineMax.min.js"></script>
 <script src="/ext_lib/scrollmagic/ScrollMagic.js"></script>
