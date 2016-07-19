@@ -42,8 +42,8 @@ $(function () {
 
         var timelineScene = new ScrollMagic.Scene({
             triggerElement:this,
-            duration:'190px',
-            triggerHook:'.7',
+            duration:'100px',
+            triggerHook:'.9',
             reverse:false
         })
             .setTween(imgOpacity)
