@@ -151,7 +151,7 @@ body{
     margin:20px;
     font-size:28px;
     font-weight:600;
-    font-family: "娃娃体-简", Helvetica, Arial, sans-serif;
+    font-family: "娃娃体-简","娃娃体", Helvetica, Arial, sans-serif;
 }
 
 .timeline .mainline{
@@ -286,7 +286,7 @@ body{
     margin:-12px 90px 0 -5px;
     position:relative;
     padding:10px 10px 9px;
-    font:normal 14px/20px "楷体-简",Helvetica, Arial, sans-serif ;
+    font:normal 14px/20px "楷体-简","楷体",Helvetica, Arial, sans-serif ;
 }
 
 .mainline .detail .text{
