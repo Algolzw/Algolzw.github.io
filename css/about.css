@@ -44,7 +44,7 @@ body{
 }
 
 .carousel-caption{
-    margin: 160px auto;
+    top: 200px;
     z-index:10;
 }
 
@@ -112,12 +112,12 @@ body{
 .self-intro b{
     margin:0 6px;
 }
-.self-intro+p:nth-last-child(2),.self-intro b{
+.self-intro+p:nth-last-child(1),.self-intro b{
     cursor: pointer;
     transition:font-size .4s;
 }
 
-.self-intro+p:nth-last-child(2):hover,
+.self-intro+p:nth-last-child(1):hover,
 .self-intro b:hover{
     font-size:20px;
 }
