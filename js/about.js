@@ -2,6 +2,9 @@ $(function () {
 
     $("[data-toggle='tooltip']").tooltip();
 
+    //针对jquery mobile a标签不能跳转
+    $("a").attr("data-ajax","false");
+
     //响应式图片
     $('.imgLiquid').imgLiquid();
 
@@ -30,8 +33,22 @@ $(function () {
         reverse: true
     })
         .setTween(imgTween)
-        .addIndicators()
         .addTo(controller);
+
+    $(".mainline div.item").each(function(){
+        var imgOpacity = new TimelineMax().add([
+            TweenMax.fromTo(this,1,{opacity:0},{opacity:1,ease:Linear.easeNone})
+        ]);
+
+        var timelineScene = new ScrollMagic.Scene({
+            triggerElement:this,
+            duration:'190px',
+            triggerHook:'.7',
+            reverse:false
+        })
+            .setTween(imgOpacity)
+            .addTo(controller);
+    });
 
     //轮播可在手机上滑动
     $('#myCarousel').swipeleft(function () {
@@ -43,6 +60,7 @@ $(function () {
     //颜色组
     var colors = ["#a94442", "#CDDDA8", "#386AA0", "#00FEFE", "#F98481", "#FDCF69", "#503874", "#FFDEAD", "#CD5C5C"];
 
+    //个人标签
     $(".self-intro b").bind("mouseenter", function () {
         var index = $(this).index();
         // alert(index);
@@ -52,6 +70,7 @@ $(function () {
         $(this).css({color: '#686868'});
     });
 
+    //头像变化
     $(".portrait").bind("mouseenter",
         function () {
             $(this).css('background-image', "url(/images/self-colored.jpg)");
@@ -61,6 +80,9 @@ $(function () {
         }
     );
 
-
+    // $(".timeline .mainline>div").each(function(){
+    //     var index = $(this).index();
+    //     $(this).css("top",100+index*50);
+    // });
 
 });

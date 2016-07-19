@@ -18,6 +18,7 @@ permalink:  /about_me/
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <link rel="stylesheet" href="/css/about.css">
 
@@ -38,7 +39,7 @@ permalink:  /about_me/
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/{{ site.baseurl }}" class="navbar-brand">{{ site.title }}</a>
+                    <a href="http://localhost:4000" class="navbar-brand">{{ site.title }}</a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navbar">
@@ -119,7 +120,7 @@ permalink:  /about_me/
 <div class="container marketing">
 
     <!-- three columns of text below the carousel -->
-    <div class="row">
+    <div class="row" id="timeline">
         <div class="col-md-8 col-md-push-2">
 
             <div class="imgLiquid img-circle portrait">
@@ -147,12 +148,107 @@ permalink:  /about_me/
                         <div class="year" style="top:100px;">1993</div>
                         <div class="item clearfix" style="top: 150px;">
                             <div class="dot"></div>
-                            <div class="month">Oct</div>
+                            <div class="month">Aug</div>
+                            <div class="area">(赵家镇)</div>
                             <div class="detail large imgLiquid">
                                 <img src="/images/timeline/1.jpg" alt="born">
+                                <div class="timeline-itemlayer"></div>
                                 <div class="text">我出生了</div>
                             </div>
                         </div>
+                        <div class="year" style="top: 200px;">2008</div>
+                        <div class="item clearfix rig" style="top: 250px;">
+                            <div class="dot"></div>
+                            <div class="month">May</div>
+                            <div class="area">(金堂县)</div>
+                            <div class="detail">汶川地震中"幸存"</div>
+                        </div>
+                        <div class="item clearfix rig" style="top: 300px;">
+                            <div class="dot"></div>
+                            <div class="month">Jun</div>
+                            <div class="area">(金堂县)</div>
+                            <div class="detail large imgLiquid">
+                                <img src="/images/timeline/3.jpg" alt="school">
+                                <div class="timeline-itemlayer"></div>
+                                <div class="text">离开父母,外地上学(<small>四川绵阳中学</small>)</div>
+                            </div>
+                        </div>
+                        <div class="year" style="top: 350px;">2011</div>
+                        <div class="item clearfix" style="top: 400px">
+                            <div class="dot"></div>
+                            <div class="month">Jun</div>
+                            <div class="area">(金堂县)</div>
+                            <div class="detail">恍恍惚惚,参与高考</div>
+                        </div>
+                        <div class="item clearfix" style="top: 450px;">
+                            <div class="dot"></div>
+                            <div class="month">Sep</div>
+                            <div class="area">(天津市)</div>
+                            <div class="detail">河北工业大学,交通运输系</div>
+                        </div>
+                        <div class="year" style="top: 500px;">2014</div>
+                        <div class="item clearfix" style="top: 550px;">
+                            <div class="dot"></div>
+                            <div class="month">Aug</div>
+                            <div class="area">(甘孜)</div>
+                            <div class="detail large imgLiquid">
+                                <img src="/images/timeline/4.jpg" alt="2013">
+                                <div class="timeline-itemlayer"></div>
+                                <div class="text">稻城亚丁,独自转山</div>
+                            </div>
+                        </div>
+                        <div class="item clearfix rig" style="top: 600px;">
+                            <div class="dot"></div>
+                            <div class="month">Dec</div>
+                            <div class="area">(天津市)</div>
+                            <div class="detail">机缘巧合,开始自学Java</div>
+                        </div>
+                        <div class="year" style="top: 650px;">2015</div>
+                        <div class="item clearfix rig" style="top: 700px;">
+                            <div class="dot"></div>
+                            <div class="month">Mar</div>
+                            <div class="area">(成都-拉萨)</div>
+                            <div class="detail large imgLiquid">
+                                <img src="/images/phoneimg.jpg" alt="2015">
+                                <div class="timeline-itemlayer"></div>
+                                <div class="text">毕业之旅,骑行川藏</div>
+                            </div>
+                        </div>
+                        <div class="item clearfix" style="top: 750px;">
+                            <div class="dot"></div>
+                            <div class="month">Apr</div>
+                            <div class="area">(天津市)</div>
+                            <div class="detail">毕设编程,开始自学C#,WebService</div>
+                        </div>
+                        <div class="item clearfix" style="top: 800px;">
+                            <div class="dot"></div>
+                            <div class="month">May</div>
+                            <div class="area">(天津市)</div>
+                            <div class="detail">完成毕设设计,通过答辩</div>
+                        </div>
+                        <div class="item clearfix" style="top: 850px;">
+                            <div class="dot"></div>
+                            <div class="month">Jun</div>
+                            <div class="area">(天津市)</div>
+                            <div class="detail">本科毕业</div>
+                        </div>
+                        <div class="item clearfix" style="top: 900px;">
+                            <div class="dot"></div>
+                            <div class="month">Jun</div>
+                            <div class="area">(天津市)</div>
+                            <div class="detail">不顾反对,专行程序员</div>
+                        </div>
+                        <div class="item clearfix" style="top: 950px;">
+                            <div class="dot"></div>
+                            <div class="month">Jul</div>
+                            <div class="area">(天津市)</div>
+                            <div class="detail large imgLiquid">
+                                <img src="/images/zimeihu.jpg" alt="2015">
+                                <div class="timeline-itemlayer"></div>
+                                <div class="text">就职于"迷你科技"有限公司,担任C#和Java程序开发工作</div>
+                            </div>
+                        </div>
+                        <div class="year" style="top: 1100px;">待续</div>
                     </div>
                 </div>
             </div>

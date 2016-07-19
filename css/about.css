@@ -3,6 +3,10 @@ body{
     color:#5a5a5a;
 }
 
+/*去除jquery-mobile.js页面下方的loading区域*/
+.ui-loader-default{ display:none}
+.ui-mobile-viewport{ border:none;}
+.ui-page {padding: 0; margin: 0; outline: 0}
 
 /*navbar*/
 
@@ -39,12 +43,11 @@ body{
 /*carousel*/
 
 .carousel{
-    min-height:500px;
     margin-bottom:60px;
 }
 
 .carousel-caption{
-    top: 200px;
+    top: 40%;
     z-index:10;
 }
 
@@ -55,7 +58,6 @@ body{
 }
 
 .carousel .item{
-    min-height:500px;
     background-color:#777;
 }
 
@@ -64,7 +66,6 @@ body{
     top:0;
     left:0;
     min-width:100%;
-    height:500px;
 }
 
 .carousel-layer{
@@ -104,22 +105,24 @@ body{
     margin-top:16px;
 }
 
-.self-intro,.self-intro+p{
+.self-intro>p,.self-intro+p{
     line-height:26px;
+    max-height:26px;
     color: #686868;
-
 }
 .self-intro b{
     margin:0 6px;
 }
 .self-intro+p:nth-last-child(1),.self-intro b{
     cursor: pointer;
-    transition:font-size .4s;
+    transition:all .3s;
 }
 
-.self-intro+p:nth-last-child(1):hover,
-.self-intro b:hover{
+.self-intro+p:nth-last-child(1):hover{
     font-size:20px;
+}
+.self-intro b:hover{
+    font-size:17px;
 }
 
 
@@ -127,7 +130,7 @@ body{
 /*featurettes*/
 
 .featurette-divider{
-    margin:45px 0 50px;
+    margin:50px 0 50px;
 }
 
 .featurette-heading{
@@ -140,6 +143,7 @@ body{
     width:100%;
     display: table;
     text-align: center;
+    margin-bottom:80px;
 }
 
 .timeline .title{
@@ -173,23 +177,11 @@ body{
     width: 60px;
 }
 
+/*left item*/
 .mainline .item{
     position:absolute;
-    width:380px;
-    margin-left:-380px;
-}
-
-.mainline .item:hover .dot{
-    width:20px;
-    height:20px;
-    background-color:#0099e5;
-    margin-left:-7px;
-    margin-top:-3px;
-}
-
-.mainline .item:hover .month{
-    color:#0099e5;
-    margin-left:17px;
+    width:390px;
+    margin-left:-390px;
 }
 
 .mainline .dot{
@@ -200,7 +192,7 @@ body{
     width:14px;
     height:14px;
     z-index:2;
-    left:380px;
+    left:390px;
     margin-left:-4px;
     transition:all .1s ease-in-out 0s;
 }
@@ -209,24 +201,67 @@ body{
     color:#71767a;
     position:absolute;
     width:40px;
-    left:380px;
+    left:390px;
     top:-1px;
-    margin:-1px 15px 0;
+    margin:-6px 15px 0;
     font-size:14px;
-    text-align:left;
+    text-align:center;
     transition:all .1s ease-in-out;
 }
+
+.mainline .area{
+    position:absolute;
+    color:#71767a;
+    width:60px;
+    left:390px;
+    margin:12px 0 0 5px;
+    font-size:12px;
+    text-align: center;
+    transition:all .1s ease-in-out;
+}
+
+.mainline .item:hover .dot{
+    width:20px;
+    height:20px;
+    background-color:#0099e5;
+    margin-left:-7px;
+    margin-top:-3px;
+}
+
+.mainline .item::after:hover{
+    background-color:#0099e5;
+
+}
+
+.mainline .item:hover .month{
+    color:#0099e5;
+    margin-left:17px;
+}
+.mainline .item:hover .area{
+    color:#0099e5;
+    margin-left:7px;
+}
+
+.mainline .item:hover .detail{
+    font-weight:600;
+}
+
+.mainline .item:hover .timeline-itemlayer{
+    opacity: 0 !important;
+    filter:alpha(opacity:0);
+}
+
 
 
 .mainline .detail::after{
     background-color: #cfd3d6;
     content:" ";
     position: absolute;
-    width:80px;
+    width:90px;
     height:3px;
     display:block;
     top:18px;
-    right:-80px;
+    right:-90px;
 }
 
 .mainline .detail.large{
@@ -248,9 +283,10 @@ body{
     max-width:280px;
     min-height:40px;
     float:right;
-    margin:-12px 80px 0 -5px;
-    line-height:1.4em;
+    margin:-12px 90px 0 -5px;
     position:relative;
+    padding:10px 10px 9px;
+    font:normal 14px/20px "楷体-简",Helvetica, Arial, sans-serif ;
 }
 
 .mainline .detail .text{
@@ -260,9 +296,60 @@ body{
     height:50px;
     display:block;
     color:#fff;
-    font:normal 15px/20px "楷体-简",Helvetica, Arial, sans-serif ;
 }
 
+.mainline .detail.large .timeline-itemlayer{
+    position:absolute;
+    background:#787878;
+    width:100%;
+    height:100%;
+    opacity: .2;
+    filter:alpha(opacity:.2);
+    transition:opacity .1s ease;
+}
+
+/*right item*/
+
+.mainline .item.rig{
+    margin-left:0;
+}
+
+.mainline .item.rig .dot {
+    left:0;
+}
+
+.mainline .item.rig .month{
+    left:0;
+    margin:-7px -50px 0;
+    text-align: center;
+}
+
+.mainline .item.rig .area{
+    left:0;
+    margin-top:11px;
+    margin-left:-60px;
+    text-align: center;
+}
+
+.mainline .item.rig:hover .month{
+    color:#0099e5;
+    margin-left:-52px;
+}
+.mainline .item.rig:hover .area{
+    color:#0099e5;
+    margin-left:-62px;
+}
+
+.mainline .item.rig .detail{
+    float:left;
+    margin-left:95px;
+    margin-right:0;
+    text-align: left;
+}
+
+.mainline .item.rig .detail::after{
+    left:-90px;
+}
 
 /*responsive css*/
 
