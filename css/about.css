@@ -391,6 +391,13 @@ body{
     }
 }
 
+@media(max-width: 760px){
+    .mainline .detail.large{
+        height: 140px;
+        width: 190px;
+    }
+}
+
 
 
 
