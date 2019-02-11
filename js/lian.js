@@ -35,7 +35,7 @@
         offsetX = (window.innerWidth-600)/2;
         offsetY = (window.innerHeight-300)/2;
         textStage = new createjs.Stage("text");
-        textStage.canvas.width = 1000;
+        textStage.canvas.width = 800;
         textStage.canvas.height = 200;
 
         stage = new createjs.Stage("stage");
@@ -59,14 +59,14 @@
     function initText() {
         text = new createjs.Text("t", "80px 'Source Sans Pro'", "#333");
         text.textAlign = 'center';
-        text.x = 340;
+        text.x = 330;
     }
 
     function initCircles() {
         circles = [];
         for(var i=0; i<800; i++) {
             var circle = new createjs.Shape();
-            var r = 5;
+            var r = 6;
             var x = window.innerWidth*Math.random();
             var y = window.innerHeight*Math.random();
             var color = colors[Math.floor(i%colors.length)];
@@ -165,23 +165,23 @@
 
 
     function createText(t) {
-        var fontSize = 690/(t.length);
-        if (fontSize > 140) fontSize = 140;
+        var fontSize = 680/(t.length);
+        if (fontSize > 138) fontSize = 138;
         text.text = t;
         text.font = "900 "+fontSize+"px 'Source Sans Pro'";
         text.textAlign = 'center';
-        text.x = 335;
+        text.x = 330;
         text.y = (172-fontSize)/2;
         textStage.addChild(text);
         textStage.update();
 
         var ctx = document.getElementById('text').getContext('2d');
-        var pix = ctx.getImageData(0,0,800,200).data;
+        var pix = ctx.getImageData(0,0,820,200).data;
         textPixels = [];
         for (var i = pix.length; i >= 0; i -= 4) {
             if (pix[i] != 0) {
-                var x = (i / 4) % 800;
-                var y = Math.floor(Math.floor(i/800)/4);
+                var x = (i / 4) % 820;
+                var y = Math.floor(Math.floor(i/820)/4);
 
                 if((x && x%8 == 0) && (y && y%8 == 0)) textPixels.push({x: x, y: y});
             }
