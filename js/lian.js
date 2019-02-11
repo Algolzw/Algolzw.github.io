@@ -35,8 +35,8 @@
         offsetX = (window.innerWidth-600)/2;
         offsetY = (window.innerHeight-300)/2;
         textStage = new createjs.Stage("text");
-        textStage.canvas.width = 600;
-        textStage.canvas.height = 250;
+        textStage.canvas.width = 1000;
+        textStage.canvas.height = 200;
 
         stage = new createjs.Stage("stage");
         stage.canvas.width = window.innerWidth;
@@ -48,24 +48,25 @@
         var str1 = '连雯怡';
         var str2 = '我们见面的第'+ first_days + '天';
         var str3 = '我们熟悉的第' + friend_days + '天';
-        var str4 = '相恋的第' + love_days + '天';
+        var str4 = '相恋的' + love_days + '天';
         var str5 = '希望咱俩能开开心心的度过每一天';
         var str6 = '永远爱你';
+        var str7 = '情人节快乐';
 
-        input = [str1, str4, str6];
+        input = [str1, str4, str7, str6];
     }
 
     function initText() {
         text = new createjs.Text("t", "80px 'Source Sans Pro'", "#333");
         text.textAlign = 'center';
-        text.x = 300;
+        text.x = 340;
     }
 
     function initCircles() {
         circles = [];
-        for(var i=0; i<600; i++) {
+        for(var i=0; i<800; i++) {
             var circle = new createjs.Shape();
-            var r = 7;
+            var r = 5;
             var x = window.innerWidth*Math.random();
             var y = window.innerHeight*Math.random();
             var color = colors[Math.floor(i%colors.length)];
@@ -164,23 +165,23 @@
 
 
     function createText(t) {
-        var fontSize = 680/(t.length);
+        var fontSize = 690/(t.length);
         if (fontSize > 140) fontSize = 140;
         text.text = t;
         text.font = "900 "+fontSize+"px 'Source Sans Pro'";
         text.textAlign = 'center';
-        text.x = 300;
+        text.x = 335;
         text.y = (172-fontSize)/2;
         textStage.addChild(text);
         textStage.update();
 
         var ctx = document.getElementById('text').getContext('2d');
-        var pix = ctx.getImageData(0,0,600,200).data;
+        var pix = ctx.getImageData(0,0,800,200).data;
         textPixels = [];
         for (var i = pix.length; i >= 0; i -= 4) {
             if (pix[i] != 0) {
-                var x = (i / 4) % 600;
-                var y = Math.floor(Math.floor(i/600)/4);
+                var x = (i / 4) % 800;
+                var y = Math.floor(Math.floor(i/800)/4);
 
                 if((x && x%8 == 0) && (y && y%8 == 0)) textPixels.push({x: x, y: y});
             }
