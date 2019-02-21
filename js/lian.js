@@ -51,7 +51,7 @@
         var str4 = '相恋的' + love_days + '天';
         var str5 = '希望咱俩能开开心心的度过每一天';
         var str6 = '永远爱你';
-        var str7 = '情人节快乐';
+        var str7 = '每天都要快乐';
 
         input = [str1, str4, str7, str6];
     }
