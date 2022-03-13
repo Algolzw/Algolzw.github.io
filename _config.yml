@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Luoziwei"
-description              : "Research Assistant. Focusing on Computer Vision, Machine Learning, and Reinforcement Learning."
+description              : "Focusing on Computer Vision, Machine Learning, and Reinforcement Learning. ziwei.ro@gmail.com"
 repository               : "Algolzw/Algolzw.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Ziwei Luo (罗梓巍)"
   avatar           : "images/self-colored.jpg"
-  bio              : "Megvii Technology Ltd."
+  bio              : "Megvii Technology Ltd. Research Assistant."
   location         : "Chengdu, China"
   employer         :
   pubmed           : 
