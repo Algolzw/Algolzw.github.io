@@ -17,9 +17,10 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I received my Master of Engineering degree from the School of Computer Science, Chengdu University of Information Technology. And I obtained the B.Eng. degree in Transportation Engineering from Hebei University of Technology. Currently, I am a research assistant at Megvii Technology Ltd., China. 
+I received my Master of Engineering degree from the School of Computer Science, Chengdu University of Information Technology, advised by Prof. [Jing Hu](https://jsjxy.cuit.edu.cn/info/1034/1841.htm). During the school, I participated in the project of performing image registration via reinforcement learning, under the advising of Dr. [Xing Wang](https://scholar.google.com/citations?user=jUWx8fcAAAAJ) and Prof. [Siwei Lyu](https://cse.buffalo.edu/~siweilyu/) from the University at Buffalo. Before that, I obtained the Bachelor degree from Hebei University of Technology. Currently, I am a research assistant at Megvii Technology Ltd., China, working with Prof. [Shuaicheng Liu](http://www.liushuaicheng.org/).
 
-My research interest generally includes **Computer Vision**, **Machine Learning**, and **Reinforcement Learning**. And my recent works mainly focus on: image super-resolution and image registration via reinforcement learning. I have published 2 SCI journals and 3 papers <a href='https://scholar.google.com/citations?user=3WQTKocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> on the top international AI conferences (CVPR, AAAI, IJCAI).
+My research interest generally includes **Computer Vision**, **Machine Learning**, and **Reinforcement Learning**. And my recent works mainly focus on: image super-resolution and image registration via reinforcement learning. I have published 2 SCI journals and 3 papers on the top international AI conferences (CVPR, AAAI, IJCAI).
+
 
 
 # 🔥 News

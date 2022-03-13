@@ -9,7 +9,7 @@
 title                    : "Luoziwei"
 description              : "Research Assistant. Focusing on Computer Vision, Machine Learning, and Reinforcement Learning."
 repository               : "Algolzw/Algolzw.github.io"
-google_scholar_stats_use_cdn : false
+google_scholar_stats_use_cdn : true
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
