@@ -50,7 +50,6 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 **<font color = "#224B8D">CVPR 2022</font>** \| [Paper](https://arxiv.org/pdf/2202.07508) \| [code](https://github.com/Algolzw/DCLS) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
 - This work reformulates the degradation model such that the kernel estimation can be transferred into the low resolution space. 
 - A deep constrained least square filtering module is applied in the feature space to generate clean features based on the estimated kernel.
-- State-of-the-art.
 </div>
 </div>
 
