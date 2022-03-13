@@ -1,18 +1,19 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
 
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <!--<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">-->
-    <link rel="stylesheet" href="{{ "
-    /ext_lib/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl}}">
-    <link rel="stylesheet" href="{{ "
-    /css/main.css" | prepend: site.baseurl }}">
-    {% if include.extra_css %}
-    <link rel="stylesheet" href="{{ "/css/" | append: include.extra_css | prepend: site.baseurl }}">
-    {% endif %}
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "
-    /feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+{% include seo.html %}
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+<head>
+  <base target="_blank">
 </head>

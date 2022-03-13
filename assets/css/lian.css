@@ -1,0 +1,28 @@
+body{
+    background-color:#333;
+    height:100%;
+}
+
+* {
+    position: absolute;
+    margin: 0; padding: 0;
+}
+
+input[type="submit"] {
+    /*display: block;*/
+    width: 200px;
+    border: 0;
+    line-height: 35px;
+    height: 55px;
+    color: #fff;
+    background: mediumpurple;
+    font-size: 28px;
+    top: 30px;
+    left: 230px;
+    cursor: pointer;
+    display: none;
+}
+
+#text{
+    /*display:none;*/
+}
