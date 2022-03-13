@@ -49,8 +49,8 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 <u>Ziwei Luo</u>, Haibin Huang, Lei Yu, Youwei Li, Haoqiang Fan, Shuaicheng Liu
 
 **<font color = "#224B8D">CVPR 2022</font>** \| [Paper](https://arxiv.org/pdf/2202.07508) \| [code](https://github.com/Algolzw/DCLS) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
-- This work reformulates the degradation model such that the kernel estimation can be transferred into the low resolution space. 
-- A deep constrained least square filtering module is applied in the feature space to generate clean features based on the estimated kernel.
+- This work proposes to disentangle deblurring and upsampling in blind super-resolution, and provides a theoretical guidance to make use of the kernel.
+<!-- - A deep constrained least square filtering module is applied in the feature space to generate clean features based on the estimated kernel. -->
 </div>
 </div>
 
@@ -63,8 +63,8 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 <u>Ziwei Luo</u>\*, Jing Hu\*, Xin Wang, Shu Hu, Bin Kong, Youbing Yin, Qi Song, Xi Wu, Siwei Lyu
 
 **<font color = "#224B8D">AAAI 2022</font>** \| [Paper](https://arxiv.org/pdf/2112.07415) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:eQOLeE2rZwMC'></span></strong>
-- It is the first work that performs deformable image registration via deep reinforcement learning.
-- We introduce a latent vector that can represent the high-dimensional action and be optimized in an Actor-Critic RL framework.
+- It is the first work that performs deformable image registration via high-dimensional action deep reinforcement learning.
+<!-- - We introduce a latent vector that can represent the high-dimensional action and be optimized in an Actor-Critic RL framework. -->
 </div>
 </div>
 
@@ -84,11 +84,17 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 
 <!-- ###################################################### -->
 
-- **Stochastic Actor-Executor-Critic for Image-to-Image Translation**, <u>Ziwei Luo</u>\*, Jing Hu\*, Xin Wang, Siwei Lyu, Bin Kong, Youbing Yin, Qi Song, Xi Wu, ***<font color = "#224B8D">IJCAI 2021</font>*** \| [[Paper](https://arxiv.org/pdf/2112.07403)]
+- **Stochastic Actor-Executor-Critic for Image-to-Image Translation**  
+<u>Ziwei Luo</u>\*, Jing Hu\*, Xin Wang, Siwei Lyu, Bin Kong, Youbing Yin, Qi Song, Xi Wu  
+***<font color = "#224B8D">IJCAI 2021</font>*** \| [[Paper](https://arxiv.org/pdf/2112.07403)]
 
-- **End-to-end multimodal image registration via reinforcement learning**, Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi Song, Siwei Lyu, Xi Wu, ***<font color = "#224B8D">Medical Image Analysis 2021</font>*** \| [[Paper](https://www.sciencedirect.com/science/article/pii/S1361841520302425)]
+- **End-to-end multimodal image registration via reinforcement learning**  
+Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi Song, Siwei Lyu, Xi Wu  
+***<font color = "#224B8D">Medical Image Analysis 2021</font>*** \| [[Paper](https://www.sciencedirect.com/science/article/pii/S1361841520302425)]
 
-- **A Spatiotemporal Agent for Robust Multimodal Registration**, <u>Ziwei Luo</u>, Xin Wang, Xi Wu, Youbing Yin, Kunlin Cao, Qi Song, Jing Hu, ***<font color = "#224B8D">IEEE ACCESS 2020</font>*** \| [[Paper](https://ieeexplore.ieee.org/iel7/6287639/8948470/09075173.pdf)]
+- **A Spatiotemporal Agent for Robust Multimodal Registration**  
+<u>Ziwei Luo</u>, Xin Wang, Xi Wu, Youbing Yin, Kunlin Cao, Qi Song, Jing Hu  
+***<font color = "#224B8D">IEEE ACCESS 2020</font>*** \| [[Paper](https://ieeexplore.ieee.org/iel7/6287639/8948470/09075173.pdf)]
 
 # 🎖 Honors and Awards
 - *2021* **Champion** in NTIRE Burst Super-Resolution Challenge (Real track)
