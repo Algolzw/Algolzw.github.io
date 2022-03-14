@@ -117,6 +117,6 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 
 
 # 💻 Experience
-- *2021.07 - Present* Research Assistant, at [Megvii Technology](https://megvii.com/), China.
-- *2020.11 - 2021.06* Research Intern, at [Megvii Technology](https://megvii.com/), China.
-- *2018.11 - 2020.06* Research Assistant, at [Chengdu University of Information Technology.](https://www.cuit.edu.cn/), China.
+- *2021.07 - Present*, Research Assistant, at [Megvii Technology](https://megvii.com/), China.
+- *2020.11 - 2021.06*, Research Intern, at [Megvii Technology](https://megvii.com/), China.
+- *2018.11 - 2020.06*, Research Assistant, at [Chengdu University of Information Technology.](https://www.cuit.edu.cn/), China.
