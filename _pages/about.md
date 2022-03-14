@@ -112,9 +112,11 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-# 💬 Teaching Experience
-- *2018.10 - 2018-12*, Teaching Assistant. Assisted Dr. Shanglian Peng in the course Foundations of Computer Science, at Chengdu University of Information Technology
+# 💬 Teaching 
+- *2018.10 - 2018-12*, Teaching Assistant in the course *Foundations of Computer Science*, at Chengdu University of Information Technology
 
 
-# 💻 Internships
-- *2021.11 - 2022.06*, [Megvii Technology](https://megvii.com/), China.
+# 💻 Experience
+- *2021.07 - Present* Research Assistant, at [Megvii Technology](https://megvii.com/), China.
+- *2020.11 - 2021.06* Research Intern, at [Megvii Technology](https://megvii.com/), China.
+- *2018.11 - 2020.06* Research Assistant, at [Chengdu University of Information Technology.](https://www.cuit.edu.cn/), China.
