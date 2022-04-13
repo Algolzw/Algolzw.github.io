@@ -1,0 +1,21 @@
+I"�<p>this is my study of using jekyll to build my blog</p>
+
+<blockquote>
+  <p>mysql、struts2、spring、hibernate、ibatis、algorithms</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"hello %s"</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+<span class="n">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s">"jet"</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'hello jet' to STDOUT.</span></code></pre></figure>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># ...python_code
+</span><span class="k">def</span> <span class="nf">print_hello</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>Check<a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more information</p>
+
+:ET
