@@ -49,7 +49,7 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 **Deep Constrained Least Squares for Blind Image Super-Resolution**  
 <u>Ziwei Luo</u>, Haibin Huang, Lei Yu, Youwei Li, Haoqiang Fan, Shuaicheng Liu
 
-**<font color = "#224B8D">CVPR 2022</font>** \| [Paper](https://arxiv.org/pdf/2202.07508) \| [code](https://github.com/Algolzw/DCLS) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+**<font color = "#224B8D">CVPR 2022</font>** \| [Paper](https://arxiv.org/pdf/2202.07508) \| [code](https://github.com/megvii-research/DCLS-SR) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
 - This work proposes to disentangle deblurring and upsampling in blind super-resolution, and provides a theoretical guidance to make use of the kernel.
 <!-- - A deep constrained least square filtering module is applied in the feature space to generate clean features based on the estimated kernel. -->
 </div>
