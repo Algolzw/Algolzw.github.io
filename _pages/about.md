@@ -24,7 +24,7 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 
 
 # 🔥 News
-- *2022.04*: &nbsp;🎉🎉 We won 1st place in NTIRE Burst Super-Resolution Challenge (Real-World Track). 
+- *2022.04*: &nbsp;🎉🎉 We won 1st place in NTIRE 2022 Burst Super-Resolution Challenge (Real-World Track). 
 - *2022.03*: &nbsp;🎉🎉 One paper accepted by IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2022). 
 - *2021.12*: &nbsp;🎉🎉 One paper accepted by AAAI Conference on Artificial Intelligence (AAAI 2022). 
  
