@@ -43,6 +43,19 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 
 <!-- ###################################################### -->
 
+<div class='paper-box'><div class='paper-box-image'><img src='images/BSRT.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**BSRT: Improving Burst Super-Resolution with Swin Transformer and Flow-Guided Deformable Alignment**  
+<u>Ziwei Luo</u>, Youwei Li, Shen Cheng, Lei Yu, Qi Wu, Zhihong Wen, Haoqiang Fan, Jian Sun, Shuaicheng Liu
+
+**<font color = "#224B8D">CVPRW 2022</font>** \| [Paper](https://arxiv.org/abs/2204.08332) \| [code](https://github.com/Algolzw/BSRT) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+- **Winner** of the NTIRE Burst Super-Resolution Challenge 2022 in Real track.
+</div>
+</div>
+
+<!-- ###################################################### -->
+
 <div class='paper-box'><div class='paper-box-image'><img src='images/DCLS.png' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
 
@@ -79,7 +92,7 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 <u>Ziwei Luo</u>, Lei Yu, Xuan Mo, Youwei Li, Lanpeng Jia, Haoqiang Fan, Jian Sun, Shuaicheng Liu
 
 **<font color = "#224B8D">CVPRW 2021</font>** \| [Paper](https://openaccess.thecvf.com/content/CVPR2021W/NTIRE/papers/Luo_EBSR_Feature_Enhanced_Burst_Super-Resolution_With_Deformable_Alignment_CVPRW_2021_paper.pdf) \| [code](https://github.com/Algolzw/EBSR) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:2osOgNQ5qMEC'></span></strong>
-- NTIRE Burst Super-Resolution Challenge 2021 **Champion** (Real track)
+- **Winner** of the NTIRE Burst Super-Resolution Challenge 2022 in Real track
 </div>
 </div>
 
