@@ -92,7 +92,7 @@ My research interest generally includes **Computer Vision**, **Machine Learning*
 <u>Ziwei Luo</u>, Lei Yu, Xuan Mo, Youwei Li, Lanpeng Jia, Haoqiang Fan, Jian Sun, Shuaicheng Liu
 
 **<font color = "#224B8D">CVPRW 2021</font>** \| [Paper](https://openaccess.thecvf.com/content/CVPR2021W/NTIRE/papers/Luo_EBSR_Feature_Enhanced_Burst_Super-Resolution_With_Deformable_Alignment_CVPRW_2021_paper.pdf) \| [code](https://github.com/Algolzw/EBSR) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:2osOgNQ5qMEC'></span></strong>
-- **Winner** of the NTIRE Burst Super-Resolution Challenge 2022 in Real track
+- **Winner** of the NTIRE Burst Super-Resolution Challenge 2021 in Real track
 </div>
 </div>
 
