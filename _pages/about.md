@@ -111,7 +111,7 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 ***<font color = "#224B8D">IEEE ACCESS 2020</font>*** \| [[Paper](https://ieeexplore.ieee.org/iel7/6287639/8948470/09075173.pdf)]
 
 # 🎖 Honors and Awards
-- *2021* **Champion** in NTIRE Burst Super-Resolution Challenge (Real track)
+- *2021, 2022* **Champion** in NTIRE Burst Super-Resolution Challenge (Real track)
 - *2021* **Outstanding Graduates**, Chengdu University of Information Technology 
 - *2021* **Award of Scientific Thesis Excellence**, Chengdu University of Information Technology 
 - *2020* **The First Prize Scholarship**, Chengdu University of Information Technology
