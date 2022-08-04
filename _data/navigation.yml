@@ -18,5 +18,9 @@ main:
   - title: "Teaching"
     url: "/#-teaching"
 
+  - title: "Academic Services"
+    url: "/#-academic-services"
+    
+
   - title: "Experience"
     url: "/#-experience"
