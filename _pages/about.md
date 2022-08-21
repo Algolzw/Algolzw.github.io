@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I received my Master of Engineering degree from the School of Computer Science, Chengdu University of Information Technology, advised by Prof. [Jing Hu](https://jsjxy.cuit.edu.cn/info/1063/1806.htm). During the school, I participated in the project of performing image registration via reinforcement learning, under the advising of Dr. [Xing Wang](https://scholar.google.com/citations?user=jUWx8fcAAAAJ) and Prof. [Siwei Lyu](https://cse.buffalo.edu/~siweilyu/) from the University at Buffalo, SUNY. Before that, I obtained the Bachelor degree from Hebei University of Technology. Currently, I am a research assistant at Megvii Technology Ltd., China, working with Prof. [Shuaicheng Liu](http://www.liushuaicheng.org/).
+I received my Master of Engineering degree from the School of Computer Science, Chengdu University of Information Technology, advised by Prof. [Jing Hu](https://jsjxy.cuit.edu.cn/info/1063/1806.htm). During the school, I participated in the project of performing image registration via reinforcement learning, under the advising of Dr. [Xing Wang](https://scholar.google.com/citations?user=jUWx8fcAAAAJ) and Prof. [Siwei Lyu](https://cse.buffalo.edu/~siweilyu/) from the University at Buffalo, SUNY. Before that, I obtained the Bachelor degree from Hebei University of Technology. I had been a research assistant at Megvii Technology Ltd., China, working with Prof. [Shuaicheng Liu](http://www.liushuaicheng.org/). Currently, I am a PhD student in Machine Learning in the group of Prof. [Thomas Schön](https://user.it.uu.se/~thosc112/) at Uppsala University.
 
-My research interest generally includes **Computer Vision**, **Machine Learning**, and **Reinforcement Learning**. And my recent works mainly focus on: image super-resolution and image registration via reinforcement learning. I have published 2 SCI journals and 3 papers on the top international AI conferences (CVPR, AAAI, IJCAI).
+My research interest generally includes **Computer Vision**, **Machine Learning**, and **Reinforcement Learning**. And my recent works mainly focus on: image super-resolution and image registration via reinforcement learning.
 
 
 

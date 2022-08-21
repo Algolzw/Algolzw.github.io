@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Ziwei Luo (罗梓巍)"
   avatar           : "images/self-colored.jpg"
-  bio              : "Megvii Technology Ltd. Research Assistant."
-  location         : "Chengdu, China"
+  bio              : "PhD Student in Machine Learning"
+  location         : "Uppsala, Sweden"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=3WQTKocAAAAJ"
