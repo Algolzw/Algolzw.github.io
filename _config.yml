@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Ziwei Luo (罗梓巍)"
   avatar           : "images/self-colored.jpg"
-  bio              : "PhD Student in Machine Learning"
+  bio              : "PhD Student in ML at Uppsala University"
   location         : "Uppsala, Sweden"
   employer         :
   pubmed           : 
