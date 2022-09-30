@@ -17,9 +17,10 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I received my Master of Engineering degree from the School of Computer Science, Chengdu University of Information Technology, advised by [Jing Hu](https://jsjxy.cuit.edu.cn/info/1063/1806.htm). During the school, I participated in the project of performing image registration via reinforcement learning, under the advising of [Xing Wang](https://scholar.google.com/citations?user=jUWx8fcAAAAJ) and [Siwei Lyu](https://cse.buffalo.edu/~siweilyu/) from the University at Buffalo, SUNY. Before that, I obtained the Bachelor degree from Hebei University of Technology. I had been a research assistant at Megvii Technology Ltd., China, working with [Shuaicheng Liu](http://www.liushuaicheng.org/). Currently, I am a PhD student in Machine Learning supervised by [Thomas Schön](https://user.it.uu.se/~thosc112/) and co-supervised by [Jens Sjölund](https://jsjol.github.io/) at Uppsala University.
+I am a PhD student in Machine Learning supervised by [Thomas Schön](https://user.it.uu.se/~thosc112/) and co-supervised by [Jens Sjölund](https://jsjol.github.io/) at [Uppsala University](https://www.uu.se/en). My research interest generally includes **Machine Learning**, **Computer Vision**, and **Reinforcement Learning**. And my recent works mainly focus on Probabilistic deep learning with application in computer vision.
 
-My research interest generally includes **Computer Vision**, **Machine Learning**, and **Reinforcement Learning**. And my recent works mainly focus on: image super-resolution and image registration via reinforcement learning.
+I received my Master of Engineering degree from the School of Computer Science, Chengdu University of Information Technology, advised by [Jing Hu](https://jsjxy.cuit.edu.cn/info/1063/1806.htm). During the school, I participated in the project of performing image registration via reinforcement learning, under the advising of [Xing Wang](https://scholar.google.com/citations?user=jUWx8fcAAAAJ) and [Siwei Lyu](https://cse.buffalo.edu/~siweilyu/) from the University at Buffalo, SUNY. Before that, I obtained the Bachelor degree from Hebei University of Technology. I had been a research assistant at Megvii Technology Ltd., China, working with [Shuaicheng Liu](http://www.liushuaicheng.org/).
+
 
 
 
