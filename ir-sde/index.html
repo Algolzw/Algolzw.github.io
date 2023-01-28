@@ -265,10 +265,15 @@ div.overlines {
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
     <script type="text/javascript"
-      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
     <meta charset="utf8">
 </head>
@@ -282,7 +287,7 @@ div.overlines {
     &mdash; IR-SDE &mdash;
    </h2>
    <!-- <p style="text-align: center"> ICLR 2023 spotlight </p> -->
-   <p style="text-align: center"> <a id="paper" href = "https://arxiv.org/pdf/2212.00490.pdf"><b>[Paper]</b></a>  <a href = "https://github.com/Algolzw/image-restoration-sde"><b>[Code]</b></a> </p>
+   <p style="text-align: center"> <a id="paper" href = ""><b>[Paper]</b></a>  <a href = "https://github.com/Algolzw/image-restoration-sde"><b>[Code]</b></a> </p>
   </div>
   <div class="n-byline">
    <div class="byline">
