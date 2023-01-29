@@ -139,8 +139,8 @@ strong {
 
 .n-title h2 {
     color: rgb(250,250,250);
-    font-weight: 600;
-    line-height: 1.2em;
+    font-weight: 550;
+    line-height: 1.1em;
     margin: 0 0 0.5rem;
     text-align: center;
 }
@@ -224,6 +224,8 @@ ul.authors.affiliations > li > a{
 ul.authors.affiliations > li > a:hover {
     text-decoration:none; 
     color: rgb(206,206,226, 1);
+    padding-bottom: 0px;
+    border-bottom: 0px solid #fff;
 }
 
 .n-title, .n-byline{
@@ -244,8 +246,11 @@ p > a:hover, .authors > li > a:hover {
     text-decoration:none;
     color: inherit;
     color: rgb(255,255,255);
-    text-decoration:underline;
+/*    text-decoration:underline;*/
     transition: 0.2s;
+
+    padding-bottom: 1px;
+    border-bottom: 1px solid #fff;
 }
 
 div.overlines {
@@ -271,7 +276,7 @@ div.overlines {
         inlineMath: [['$','$']]
       }
     });
-  </script>
+    </script>
     <script type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
@@ -287,7 +292,7 @@ div.overlines {
     &mdash; IR-SDE &mdash;
    </h2>
    <!-- <p style="text-align: center"> ICLR 2023 spotlight </p> -->
-   <p style="text-align: center"> <a id="paper" href = ""><b>[Paper]</b></a>  <a href = "https://github.com/Algolzw/image-restoration-sde"><b>[Code]</b></a> </p>
+   <p style="text-align: center"> [<a href = ""><b>Paper</b></a>]  [<a href = "https://github.com/Algolzw/image-restoration-sde"><b>Code</b></a>] </p>
   </div>
   <div class="n-byline">
    <div class="byline">
@@ -390,10 +395,22 @@ div.overlines {
         <figcaption style="display:flex; justify-content: center"> <b>Image Dehazing</b> </figcaption>
     </div>
 
-<h3>Related Projects</h3>
-<ul>
-  <li>This template is built upon <a href="https://iterative-refinement.github.io/">SR3: Image Super-Resolution via Iterative Refinement</a>.</li>
-</ul>
+    <h3 style="text-align: center;">Interpolation</h3>
+    <p>With IR-SDE, we can also perform interpolation by letting source image to be $x(0)$ and target image to be $\mu$, and then simply simulating the forward SDE process.</p>
+
+    <h4>Image Interpolation</h4>
+    <div style="text-align: center;">
+        <video controls autoplay loop width="768" height="432" style="width: 100%;display: block; margin-left: auto; margin-right: auto;">
+        <source src="images/interpolation.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display:flex; justify-content: center"> <b>Image Interpolation</b> </figcaption>
+    </div>
+
+
+    <h3>Related Projects</h3>
+    <ul>
+      <li>This template is built upon <a href="https://iterative-refinement.github.io/">SR3: Image Super-Resolution via Iterative Refinement</a>.</li>
+    </ul>
       
 
 <!-- <h3>Citation</h3>
