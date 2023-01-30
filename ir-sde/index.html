@@ -221,6 +221,24 @@ ul.authors.affiliations > li > a{
     text-decoration:none; 
 }
 
+.authors.bottom > li > a {
+    text-decoration:none;
+    color: inherit;
+    color: rgb(255,255,255);
+    font-size: 14px;
+}
+
+.authors.bottom > li > a:hover {
+    text-decoration:none;
+    color: inherit;
+    color: rgb(255,255,255);
+/*    text-decoration:underline;*/
+    transition: 0.s;
+
+    padding-bottom: 0px;
+    border-bottom: 0px solid #fff;
+}
+
 ul.authors.affiliations > li > a:hover {
     text-decoration:none; 
     color: rgb(206,206,226, 1);
@@ -413,22 +431,44 @@ div.overlines {
     </ul>
       
 
-<!-- <h3>Citation</h3>
-<p>
-  For more details and additional results, <a href="https://arxiv.org/pdf/2212.00490.pdf">read the full paper</a>.
-</p> -->
-<!-- <code>
-  @article{wang2022ddnm,
-  <div style="padding-left: 5%; margin: 0">
-    title={Zero Shot Image Restoration Using Denoising Diffusion Null-Space Model},<br/>
-    author={Yinhuai, Wang and Jiwen, Yu and Jian, Zhang},<br/>
-    journal={arXiv:2212.00490},<br/>
-    year={2022}}<br/>
-  </div>
-  }<br/>
-</code> -->
+    <h3>Citation</h3>
+    
+    <code>
+      @article{luo2023image,
+      <div style="padding-left: 5%; margin: 0">
+        title={Image Restoration with Mean-Reverting Stochastic Differential Equations},<br/>
+        author={Luo, Ziwei and Gustafsson, Fredrik K. and Zhao, Zheng and Sjölund, Jens and Schön, Thomas B.},<br/>
+        journal={arXiv preprint arXiv:2301.11699},<br/>
+        year={2023}}<br/>
+      </div>
+      }<br/>
+    </code>
 <span style="margin-bottom: 10%"></span>
 </d-article>
 
+<div class="n-byline">
+   <div class="byline">
+    <ul class="authors bottom">
+     <li>
+      <a>Ziwei Luo</a>
+     </li>
+     <li>
+      <a>Fredrik K. Gustafsson</a>
+     </li>
+     <li>
+      <a>Zheng Zhao</a>
+     </li>
+     <li>
+      <a>Jens Sjölund</a>
+     </li>
+     <li>
+      <a>Thomas B. Schön</a>
+     </li>
+     <li>
+        &bull; &emsp; <a>2023</a>
+     </li>
+    </ul>
+   </div>
+  </div>
 
 </body>
