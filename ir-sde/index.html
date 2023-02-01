@@ -286,7 +286,6 @@ div.overlines {
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -358,7 +357,7 @@ div.overlines {
 
         <h4 style="text-align: center;">Reverse-Time SDE for Image Restoration</h3>
         <p style="text-align: center;">
-          <b>$dx = \big[ \theta_t \, (\mu - x) - \sigma_t^2 \, \nabla_x \log p_t(x) \big] dt + \sigma_t dw$</b>
+          <b>$dx = \big[ \theta_t \, (\mu - x) - \sigma_t^2 \, \nabla_x \log p_t(x) \big] dt + \sigma_t d\hat{w}$</b>
         </p>
     </div>
 
