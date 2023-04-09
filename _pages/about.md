@@ -25,10 +25,10 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 
 # 🔥 News
-- *2022.08*: &nbsp;🎉🎉 I am invited to be a Journal Reviewer for IEEE Transactions on Image Processing (TIP).
+- *2023.04*: &nbsp;🎉🎉 We win 2nd place in the NTIRE 2023 Shadow Removal Challenge (**1st place on perceptual scores**).
 - *2022.04*: &nbsp;🎉🎉 We win 1st place in the NTIRE 2022 Burst Super-Resolution Challenge (Real-World Track). 
 - *2022.03*: &nbsp;🎉🎉 One paper is accepted by IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2022). 
-- *2021.12*: &nbsp;🎉🎉 One paper is accepted by AAAI Conference on Artificial Intelligence (AAAI 2022). 
+<!--- *2021.12*: &nbsp;🎉🎉 One paper is accepted by AAAI Conference on Artificial Intelligence (AAAI 2022). -->
  
 
 # 📝 Publications 
@@ -113,6 +113,7 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 ***<font color = "#224B8D">IEEE ACCESS 2020</font>*** \| [[Paper](https://ieeexplore.ieee.org/iel7/6287639/8948470/09075173.pdf)]
 
 # 🎖 Honors and Awards
+- *2023* **2nd** place in NTIRE Shadow Removal Challenge (1st place on perceptual scores)
 - *2021, 2022* **Champion** in NTIRE Burst Super-Resolution Challenge (Real track)
 - *2021* **Outstanding Graduates**, Chengdu University of Information Technology 
 - *2021* **Award of Scientific Thesis Excellence**, Chengdu University of Information Technology 
@@ -121,6 +122,7 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 
 
 # 📖 Educations
+- *2022.09 - present*, PhD student, Uppsala University. 
 - *2018.09 - 2021.06*, Master, Chengdu University of Information Technology. 
 - *2011.09 - 2015.06*, Undergraduate, Hebei University of Technology.
 
@@ -129,11 +131,13 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💬 Teaching 
+- *2023.01 - 2018-04*, Teaching Assistant in the course *Statistical Machine Learning*, at Uppsala University
 - *2018.10 - 2018-12*, Teaching Assistant in the course *Foundations of Computer Science*, at Chengdu University of Information Technology
 
 # 📫 Academic Services
 ### Journal Reviewer 
 - IEEE Transactions on Image Processing (TIP)
+- IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
 
 ### Conference Reviewer
 - International Conference on Intelligent Robots and Systems (IROS) 2022
