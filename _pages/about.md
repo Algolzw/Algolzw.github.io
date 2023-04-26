@@ -25,9 +25,10 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 
 # 🔥 News
+- *2023.04*: &nbsp;🎉🎉 One paper is accepted by International Conference on Machine Learning (**ICML 2023**).
 - *2023.04*: &nbsp;🎉🎉 We win 2nd place in the NTIRE 2023 Shadow Removal Challenge (**1st place on perceptual scores**).
 - *2022.04*: &nbsp;🎉🎉 We win 1st place in the NTIRE 2022 Burst Super-Resolution Challenge (Real-World Track). 
-- *2022.03*: &nbsp;🎉🎉 One paper is accepted by IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2022). 
+- *2022.03*: &nbsp;🎉🎉 One paper is accepted by IEEE Conference on Computer Vision and Pattern Recognition (**CVPR 2022**). 
 <!--- *2021.12*: &nbsp;🎉🎉 One paper is accepted by AAAI Conference on Artificial Intelligence (AAAI 2022). -->
  
 
@@ -42,6 +43,34 @@ I received my Master of Engineering degree from the School of Computer Science, 
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 </div>
 </div> -->
+
+<!-- ###################################################### -->
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/refusion.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models**  
+<u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
+
+**<font color = "#224B8D">CVPRW 2023</font>** \| [Paper](https://arxiv.org/abs/2304.08291) \| [Code](https://github.com/Algolzw/image-restoration-sde) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+- <span style="color:red">**Runner-up method**</span> of the NTIRE Image Shadow Removal Challenge 2023.
+- An extention of the [IR-SDE](https://arxiv.org/abs/2301.11699).
+</div>
+</div>
+
+<!-- ###################################################### -->
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/ir-sde.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Image Restoration with Mean-Reverting Stochastic Differential Equations**  
+<u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
+
+**<font color = "#224B8D">ICML 2023</font>** \| [Paper](https://arxiv.org/abs/2301.11699) \| [Code](https://github.com/Algolzw/image-restoration-sde) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+- This work presents a stochastic differential equation (SDE) approach for general-purpose image restoration.
+- A maximum likelihood objective is proposed to learn an optimal reverse trajectory which stabilizes the training and improves accuracy.
+</div>
+</div>
 
 <!-- ###################################################### -->
 
