@@ -46,19 +46,6 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 <!-- ###################################################### -->
 
-<div class='paper-box'><div class='paper-box-image'><img src='images/refusion.png' alt="sym" width="100%"></div>
-<div class='paper-box-text' markdown="1">
-
-**Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models**  
-<u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
-
-**<font color = "#224B8D">CVPRW 2023</font>** \| [Paper](https://arxiv.org/abs/2304.08291) \| [Code](https://github.com/Algolzw/image-restoration-sde) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
-- <span style="color:red">**Runner-up method**</span> of the NTIRE Image Shadow Removal Challenge 2023.
-- An extention of the [IR-SDE](https://arxiv.org/abs/2301.11699).
-</div>
-</div>
-
-<!-- ###################################################### -->
 
 <div class='paper-box'><div class='paper-box-image'><img src='images/ir-sde.png' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
@@ -69,6 +56,20 @@ I received my Master of Engineering degree from the School of Computer Science, 
 **<font color = "#224B8D">ICML 2023</font>** \| [Paper](https://arxiv.org/abs/2301.11699) \| [Code](https://github.com/Algolzw/image-restoration-sde) \| [Project](https://algolzw.github.io/ir-sde/index.html) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
 - This work presents a stochastic differential equation (SDE) approach for general-purpose image restoration.
 - A maximum likelihood objective is proposed to learn an optimal reverse trajectory which stabilizes the training and improves accuracy.
+</div>
+</div>
+
+<!-- ###################################################### -->
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/refusion.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models**  
+<u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
+
+**<font color = "#224B8D">CVPRW 2023</font>** \| [Paper](https://arxiv.org/abs/2304.08291) \| [Code](https://github.com/Algolzw/image-restoration-sde) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+- <span style="color:red">**Runner-up method**</span> of the NTIRE Image Shadow Removal Challenge 2023.
+- An extention of the [IR-SDE](https://arxiv.org/abs/2301.11699).
 </div>
 </div>
 
