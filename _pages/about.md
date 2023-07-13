@@ -68,7 +68,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 <u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
 
 **<font color = "#224B8D">CVPRW 2023</font>** \| [Paper](https://arxiv.org/abs/2304.08291) \| [Code](https://github.com/Algolzw/image-restoration-sde) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
-- <span style="color:red">**Runner-up method**</span> of the NTIRE Image Shadow Removal Challenge 2023.
+- <span style="color:red">**Winning solution**</span> of the NTIRE Image Shadow Removal Challenge 2023.
 - An extention of the [IR-SDE](https://arxiv.org/abs/2301.11699).
 </div>
 </div>
