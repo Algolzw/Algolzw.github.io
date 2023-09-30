@@ -341,7 +341,7 @@ div.overlines {
     <figure  style="grid-column: text">
         <img src="images/overview.png" style="width: 100%;display: block; margin-left: auto; margin-right: auto;"/>
         <figcaption >  <b>An overview of our proposed construction</b>: A mean-reverting SDE <b>$dx = \theta_t \, (\mu - {x}) dt + \sigma_t dw$</b> is used for image restoration. The SDE models the degradation process from a high-quality image $x(0)$ to its low-quality counterpart $\mu$, by diffusing $x(0)$ towards a noisy version $\mu + \epsilon$ of the low-quality image. By simulating the corresponding reverse-time SDE, high-quality images can then be restored.  </figcaption>
-        <img src="images/results.png" style="width: 100%; margin-top: 1rem;display: block; margin-left: auto; margin-right: auto;"/>
+        <img src="images/results.jpg" style="width: 100%; margin-top: 1rem;display: block; margin-left: auto; margin-right: auto;"/>
             <figcaption >  <b>IR-SDE works well on various problems, <em style="color: #e67300;">the only change required for each task is to replace the dataset!</em> </b></figcaption>
     </figure>
     <h3 style="text-align: center;" >Summary</h3>
@@ -372,13 +372,6 @@ div.overlines {
         <figcaption style="display:flex; justify-content: center"> <b>Image Deraining</b> </figcaption>
     </div>
 
-    <h4>Image deblurring</h4>
-    <div style="text-align: center;">
-        <video controls loop width="768" height="432" style="width: 100%;display: block; margin-left: auto; margin-right: auto;">
-        <source src="images/deblur.mp4" type="video/mp4">
-        </video>
-        <figcaption style="display:flex; justify-content: center"> <b>Image Deblurring</b>  </figcaption>
-    </div>
 
     <h4>Image denoising</h4>
     <div style="text-align: center;">
@@ -386,30 +379,6 @@ div.overlines {
         <source src="images/denoising.mp4" type="video/mp4">
         </video>
         <figcaption style="display:flex; justify-content: center"> <b>Image Denoising</b>  </figcaption>
-    </div>
-
-    <h4>Image super-resolution</h4>
-    <div style="text-align: center;">
-        <video controls loop width="768" height="432" style="width: 100%;display: block; margin-left: auto; margin-right: auto;">
-        <source src="images/super-resolution.mp4" type="video/mp4">
-        </video>
-        <figcaption style="display:flex; justify-content: center"> <b>Image Super-Resolution</b> </figcaption>
-    </div>
-
-    <h4>Image inpainting</h4>
-    <div style="text-align: center;">
-        <video controls loop width="768" height="432" style="width: 100%;display: block; margin-left: auto; margin-right: auto;">
-        <source src="images/inpainting.mp4" type="video/mp4">
-        </video>
-        <figcaption style="display:flex; justify-content: center"> <b>Image Inpainting</b> </figcaption>
-    </div>
-
-    <h4>Image dehazing</h4>
-    <div style="text-align: center;">
-        <video controls loop width="768" height="432" style="width: 100%;display: block; margin-left: auto; margin-right: auto;">
-        <source src="images/dehaze.mp4" type="video/mp4">
-        </video>
-        <figcaption style="display:flex; justify-content: center"> <b>Image Dehazing</b> </figcaption>
     </div>
 
     <h3 style="text-align: center;">Interpolation</h3>

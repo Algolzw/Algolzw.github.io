@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Controlling Vision-Language Models for Universal Image Restoration.">
+  <meta name="keywords" content="Vision-Language, Image Restoration, Diffusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nerfies: Deformable Neural Radiance Fields</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://algolzw.github.io/daclip-uir/index.html">
+            DA-CLIP
+          </a>
+          <a class="navbar-item" href="https://algolzw.github.io/ir-sde/index.html">
+            IR-SDE
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Controlling Vision-Language Models for Universal Image Restoration</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href = "https://algolzw.github.io/">Ziwei Luo</a>, 
+            <span class="author-block">
+              <a href = "https://www.fregu856.com/">Fredrik K. Gustafsson</a>, 
+            <span class="author-block">
+              <a href = "https://zz.zabemon.com/">Zheng Zhao</a>, 
+            </span>
+            <span class="author-block">
+              <a href = "https://jsjol.github.io/">Jens Sjölund</a>, 
+            </span>
+            <span class="author-block">
+              <a href = "https://user.it.uu.se/~thosc112/index.html">Thomas B. Schön</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Department of Information Technology, Uppsala University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Algolzw/daclip-uir"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/teaser.jpg" autoplay muted loop playsinline height="100%">
+      </img>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Universal Image Restoration</span> 
+        <p>DA-CLIP precisely predicts the degradation embedding for different corrupted inputs and also outputs high-quality content features for better image restoration performance.</p>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <img id="teaser" src="./static/images/i7.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-chair-tp">
+          <img id="teaser" src="./static/images/i8.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-shiba">
+          <img id="teaser" src="./static/images/i9.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-fullbody">
+          <img id="teaser" src="./static/images/i10.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-blueshirt">
+          <img id="teaser" src="./static/images/i5.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-mask">
+          <img id="teaser" src="./static/images/i6.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-coffee">
+          <img id="teaser" src="./static/images/i2.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-toby">
+          <img id="teaser" src="./static/images/i1.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-toby">
+          <img id="teaser" src="./static/images/i3.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-toby">
+          <img id="teaser" src="./static/images/i4.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Vision-language models such as CLIP have shown great impact on diverse downstream tasks for zero-shot or label-free predictions. However, when it comes to low-level vision such as image restoration their performance deteriorates dramatically due to corrupted inputs. 
+          </p>
+          <p>
+              In this paper, we present a degradation-aware vision-language model (DA-CLIP) to better transfer pretrained vision-language models to low-level vision tasks as a universal framework for image restoration. More specifically, DA-CLIP trains an additional controller that adapts the fixed CLIP image encoder to predict high-quality feature embeddings. By integrating the embedding into an image restoration network via cross-attention, we are able to pilot the model to learn a high-fidelity image reconstruction. The controller itself will also output a degradation feature that matches the real corruptions of the input, yielding a natural classifier for different degradation types. 
+          </p>
+          <p>
+            In addition, we construct a mixed degradation dataset with synthetic captions for DA-CLIP training. Our approach advances state-of-the-art performance on both degradation-specific and unified image restoration tasks, showing a promising direction of prompting image restoration with large-scale pretrained vision-language models.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper Overview. -->
+    <div class="container is-max-desktop is-centered has-text-centered">
+      <div class="container is-four-fifths">
+        <h2 class="title is-3">Overview Framework</h2>
+        <div class="publication-video">
+          <img id="teaser" src="./static/images/overview.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <p>
+          DA-CLIP freezes both the text and image encoders of a pre-trained CLIP but learns an additional image controller with contrastive learning. This controller predicts degradation features to match real corruptions and then controls the image encoder to output high-quality content features. Once trained, DA-CLIP can be integrated into other image restoration models by simply adding a cross-attention module and a degradation feature prompting module.
+        </p>
+        <br/>
+      </div>
+    </div>
+    <!--/ Paper Overview. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Controller. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Controller</h2>
+          <p>
+            Controlling the ViT-based image encoder with a trainable controller. The dense connection layers from controller to image encoder are initialized to zero.
+          </p>
+          <img id="teaser" src="./static/images/controller.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+      </div>
+      <!--/ Controller. -->
+
+      <!-- Prompt. -->
+      <div class="column">
+        <h2 class="title is-3">Prompt Learning</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Learning the prompt with degradation embeddings predicted from the controller. The prompt module aims to improve the degradation classification for unified image restoration.
+            </p>
+            <img id="teaser" src="./static/images/prompt.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Prompt. -->
+</section>
+
+<section class="section">
+    <!-- Data Construction. -->
+    <div class="container is-max-desktop has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Generating Image-Text-Degradation Pairs</h2>
+
+        <!-- image-text-degradation pairs. -->
+        <!-- <h3 class="title is-4">Generating image-text-degradation pairs</h3> -->
+        <div class="content has-text-justified">
+          <p>
+            In order to train DA-CLIP on the mixed-degradation dataset, we use the bootstrapped vision-language framework BLIP to generate synthetic captions for all HQ images. Since the inputs are clean, the generated captions are assumed to be accurate and of high-quality. We are then able to construct image-text-degradation pairs by directly combining these clean captions, LQ images, and the corresponding degradation types.
+          </p>
+        </div>
+        <div class="columns is-vcentered">
+          <div class="column interpolation-video-column">
+            <img id="teaser" src="./static/images/data_generating.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>An example of generating the image-text-degradation tuple with BLIP. The clean caption generated from the HQ image is accurate and does not convey the degradation information.</p>
+        </div>
+        <!-- <br/> -->
+        <!--/ image-text-degradation pairs. -->
+      </div>
+    </div>
+    <!--/ Data Construction. -->
+</section>
+
+
+<section class="section hero is-light is-small">
+    <!-- Results. -->
+    <div class="container is-max-desktop has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+
+        <!-- Degradation-specific Image Restoration. -->
+        <h3 class="title is-4">Degradation-specific Image Restoration</h3>
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img id="teaser" src="./static/images/results_single.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+        <br/>
+        <!--/ Degradation-specific Image Restoration. -->
+
+        <!-- Unified Image Restoration. -->
+        <h3 class="title is-4">Unified Image Restoration</h3>
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img id="teaser" src="./static/images/results-UIR.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+        <!-- <br/> -->
+        <!--/ Unified Image Restoration. -->
+      </div>
+    </div>
+    <!--/ Results. -->
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <p>If our code helps your research or work, please consider citing our paper. The following are BibTeX references:</p>
+    <pre><code>@article{luo2023controlling,
+  title={Controlling Vision-Language Models for Universal Image Restoration},
+  author={Luo, Ziwei and Gustafsson, Fredrik K and Zhao, Zheng and Sj{\"o}lund, Jens and Sch{\"o}n, Thomas B},
+  booktitle={arxiv},
+  year={2023}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/Algolzw/daclip-uir" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This template based on the <a
+              href="https://nerfies.github.io">Nerfies</a> website. If you want to reuse their <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
