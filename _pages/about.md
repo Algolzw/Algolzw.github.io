@@ -161,11 +161,13 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💬 Teaching 
-- *2023.01 - 2018-04*, Teaching Assistant in the course *Statistical Machine Learning*, at Uppsala University
-- *2018.10 - 2018-12*, Teaching Assistant in the course *Foundations of Computer Science*, at Chengdu University of Information Technology
+- Teaching Assistant in the course *Advanced Probabilistic Machine Learning*, at Uppsala University
+- Teaching Assistant in the course *Statistical Machine Learning*, at Uppsala University
+- Teaching Assistant in the course *Foundations of Computer Science*, at Chengdu University of Information Technology
 
 # 📫 Academic Services
 ### Journal Reviewer 
+- IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 - IEEE Transactions on Image Processing (TIP)
 - IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
 
