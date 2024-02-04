@@ -25,7 +25,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 
 # 🔥 News
-- *2024.01*: &nbsp;🎉🎉 One paper is accepted by International Conference on Learning Representations (**ICLR 2023**).
+- *2024.01*: &nbsp;🎉🎉 One paper is accepted by International Conference on Learning Representations (**ICLR 2024**).
 - *2023.04*: &nbsp;🎉🎉 One paper is accepted by International Conference on Machine Learning (**ICML 2023**).
 - *2023.04*: &nbsp;🎉🎉 We win 2nd place in the NTIRE 2023 Shadow Removal Challenge (**1st place on perceptual scores**).
 - *2022.04*: &nbsp;🎉🎉 We win 1st place in the NTIRE 2022 Burst Super-Resolution Challenge (Real-World Track). 
