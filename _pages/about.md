@@ -48,6 +48,21 @@ I received my Master of Engineering degree from the School of Computer Science, 
 <!-- ###################################################### -->
 
 
+<div class='paper-box'><div class='paper-box-image'><img src='images/da-clip.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Controlling Vision-Language Models for Multi-Task Image Restoration**  
+<u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
+
+**<font color = "#224B8D">ICLR 2024</font>** \| [Paper](https://arxiv.org/abs/2310.01018) \| [Code](https://github.com/Algolzw/daclip-uir) \| [Project](https://algolzw.github.io/daclip-uir/index.html) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+- This work presents a degradation-aware vision-language model (DA-CLIP) for multi-task image restoration.
+- A controller predicts degradation types and also adapts the fixed CLIP image encoder to predict high-quality feature embeddings.
+</div>
+</div>
+
+<!-- ###################################################### -->
+
+
 <div class='paper-box'><div class='paper-box-image'><img src='images/ir-sde.png' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
 

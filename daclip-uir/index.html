@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Controlling Vision-Language Models for Universal Image Restoration.">
+        content="Controlling Vision-Language Models for Multi-Task Image Restoration.">
   <meta name="keywords" content="Vision-Language, Image Restoration, Diffusion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Controlling Vision-Language Models for Universal Image Restoration</title>
+  <title>Controlling Vision-Language Models for Multi-Task Image Restoration</title>
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -80,7 +80,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Controlling Vision-Language Models for Universal Image Restoration</h1>
+          <h1 class="title is-1 publication-title">Controlling Vision-Language Models for Multi-Task Image Restoration</h1>
           <h3 class="title is-4 publication-title">ICLR 2024</h3>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -180,7 +180,7 @@
       <img id="teaser" src="./static/images/teaser.jpg" autoplay muted loop playsinline height="100%">
       </img>
       <h2 class="subtitle has-text-centered">
-        <p><span class="dnerf">Universal Image Restoration</span> </p><br/>
+        <p><span class="dnerf">Multi-Task Image Restoration</span> </p><br/>
         <p>DA-CLIP precisely predicts the degradation embedding for different corrupted inputs and also outputs high-quality content features for better image restoration performance.</p>
       </h2>
     </div>
@@ -239,7 +239,7 @@
             Vision-language models such as CLIP have shown great impact on diverse downstream tasks for zero-shot or label-free predictions. However, when it comes to low-level vision such as image restoration their performance deteriorates dramatically due to corrupted inputs. 
           </p>
           <p>
-              In this paper, we present a degradation-aware vision-language model (DA-CLIP) to better transfer pretrained vision-language models to low-level vision tasks as a universal framework for image restoration. More specifically, DA-CLIP trains an additional controller that adapts the fixed CLIP image encoder to predict high-quality feature embeddings. By integrating the embedding into an image restoration network via cross-attention, we are able to pilot the model to learn a high-fidelity image reconstruction. The controller itself will also output a degradation feature that matches the real corruptions of the input, yielding a natural classifier for different degradation types. 
+              In this paper, we present a degradation-aware vision-language model (DA-CLIP) to better transfer pretrained vision-language models to low-level vision tasks as a multi-task framework for image restoration. More specifically, DA-CLIP trains an additional controller that adapts the fixed CLIP image encoder to predict high-quality feature embeddings. By integrating the embedding into an image restoration network via cross-attention, we are able to pilot the model to learn a high-fidelity image reconstruction. The controller itself will also output a degradation feature that matches the real corruptions of the input, yielding a natural classifier for different degradation types. 
           </p>
           <p>
             In addition, we construct a mixed degradation dataset with synthetic captions for DA-CLIP training. Our approach advances state-of-the-art performance on both degradation-specific and unified image restoration tasks, showing a promising direction of prompting image restoration with large-scale pretrained vision-language models.
@@ -384,7 +384,7 @@
     <h2 class="title">BibTeX</h2>
     <p>If our code helps your research or work, please consider citing our paper. The following are BibTeX references:</p>
     <pre><code>@article{luo2023controlling,
-  title={Controlling Vision-Language Models for Universal Image Restoration},
+  title={Controlling Vision-Language Models for Multi-Task Image Restoration},
   author={Luo, Ziwei and Gustafsson, Fredrik K and Zhao, Zheng and Sj{\"o}lund, Jens and Sch{\"o}n, Thomas B},
   journal={arXiv preprint arXiv:2310.01018},
   year={2023}
