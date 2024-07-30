@@ -184,12 +184,14 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 # 📫 Academic Services
 ### Journal Reviewer 
 - IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+- International Journal of Computer Vision (IJCV)
 - IEEE Transactions on Image Processing (TIP)
 - IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
 
 ### Conference Reviewer
 - International Conference on Intelligent Robots and Systems (IROS) 2022
 - IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024
+- Advances in Neural Information Processing Systems (NeurIPS) 2024
 
 # 💻 Experience
 - *2022.09 - present*, PhD student, at [Uppsala university](https://www.uu.se/en), Sweden.
