@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD student in Machine Learning supervised by [Thomas Schön](https://user.it.uu.se/~thosc112/) and co-supervised by [Jens Sjölund](https://jsjol.github.io/) at [Uppsala University](https://www.uu.se/en). My research interest generally includes **Machine Learning**, **Computer Vision**, and **Reinforcement Learning**. And my recent works mainly focus on Probabilistic deep learning with application in computer vision.
+I am a PhD student in Machine Learning supervised by [Thomas Schön](https://user.it.uu.se/~thosc112/) and co-supervised by [Jens Sjölund](https://jsjol.github.io/) and [Fredrik K. Gustafsson](https://www.fregu856.com/) at [Uppsala University](https://www.uu.se/en). My research interest generally includes **Machine Learning**, **Computer Vision**, and **Reinforcement Learning**. And my recent works mainly focus on Probabilistic deep learning with application in computer vision.
 
 I received my Master of Engineering degree from the School of Computer Science, Chengdu University of Information Technology, advised by [Jing Hu](https://jsjxy.cuit.edu.cn/info/1063/1806.htm). During the school, I participated in the project of performing image registration via reinforcement learning, under the advising of [Xin Wang](https://scholar.google.com/citations?user=jUWx8fcAAAAJ) and [Siwei Lyu](https://cse.buffalo.edu/~siweilyu/) from the University at Buffalo, SUNY. Before that, I obtained the Bachelor degree from Hebei University of Technology. I had been a research assistant at Megvii Technology Ltd., China, working with [Shuaicheng Liu](http://www.liushuaicheng.org/).
 
@@ -25,6 +25,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 
 # 🔥 News
+- *2024.09*: &nbsp;🎉🎉 One paper is accepted by Advances in Neural Information Processing Systems (**NeurIPS 2024**).
 - *2024.01*: &nbsp;🎉🎉 One paper is accepted by International Conference on Learning Representations (**ICLR 2024**).
 - *2023.04*: &nbsp;🎉🎉 One paper is accepted by International Conference on Machine Learning (**ICML 2023**).
 - *2023.04*: &nbsp;🎉🎉 We win 2nd place in the NTIRE 2023 Shadow Removal Challenge (**1st place on perceptual scores**).
@@ -44,6 +45,21 @@ I received my Master of Engineering degree from the School of Computer Science, 
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 </div>
 </div> -->
+
+<!-- ###################################################### -->
+
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/diffusion-policy.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Entropy-regularized Diffusion Policy with Q-Ensembles for Offline Reinforcement Learning**  
+Ruoqi Zhang, Ziwei Luo, Jens Sjölund, Thomas B. Schön, Per Mattsson
+
+**<font color = "#224B8D">NeurIPS 2024</font>** \| [Paper](https://arxiv.org/abs/2402.04080) \| [Code](https://github.com/ruoqizzz/entropy-offlineRL) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+- This work presents a diffusion-based policy for offline reinforcement learning.
+- A diffusion entropy and the Q-ensembles are introduced to improve the RL performance.
+</div>
+</div>
 
 <!-- ###################################################### -->
 
