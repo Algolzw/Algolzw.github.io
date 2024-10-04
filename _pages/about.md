@@ -53,7 +53,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 <div class='paper-box-text' markdown="1">
 
 **Entropy-regularized Diffusion Policy with Q-Ensembles for Offline Reinforcement Learning**  
-Ruoqi Zhang, Ziwei Luo, Jens Sjölund, Thomas B. Schön, Per Mattsson
+Ruoqi Zhang*, <u>Ziwei Luo</u>*, Jens Sjölund, Thomas B. Schön, Per Mattsson
 
 **<font color = "#224B8D">NeurIPS 2024</font>** \| [Paper](https://arxiv.org/abs/2402.04080) \| [Code](https://github.com/ruoqizzz/entropy-offlineRL) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
 - This work presents a diffusion-based policy for offline reinforcement learning.
