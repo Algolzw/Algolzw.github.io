@@ -25,6 +25,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 
 # 🔥 News
+- *2024.11*: &nbsp;🎉🎉 I was selected as a **Top Reviewer** in NeurIPS 2024.
 - *2024.09*: &nbsp;🎉🎉 One paper is accepted by Advances in Neural Information Processing Systems (**NeurIPS 2024**).
 - *2024.01*: &nbsp;🎉🎉 One paper is accepted by International Conference on Learning Representations (**ICLR 2024**).
 - *2023.04*: &nbsp;🎉🎉 One paper is accepted by International Conference on Machine Learning (**ICML 2023**).
@@ -208,6 +209,7 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 - International Conference on Intelligent Robots and Systems (IROS) 2022
 - IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024
 - Advances in Neural Information Processing Systems (NeurIPS) 2024
+- International Conference on Learning Representations (ICLR) 2024
 
 # 💻 Experience
 - *2022.09 - present*, PhD student, at [Uppsala university](https://www.uu.se/en), Sweden.
