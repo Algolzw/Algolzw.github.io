@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Controlling Vision-Language Models for Universal Image Restoration.">
+  <meta name="keywords" content="Vision-Language, Image Restoration, Diffusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forward-only Diffusion Probabilistic Models</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://algolzw.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://algolzw.github.io/daclip-uir/index.html">
+            DA-CLIP
+          </a>
+          <a class="navbar-item" href="https://algolzw.github.io/ir-sde/index.html">
+            IR-SDE
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Forward-only Diffusion Probabilistic Models</h1>
+          <!-- <h3 class="title is-4 publication-title">ICLR 2024</h3> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href = "https://algolzw.github.io/">Ziwei Luo</a>, 
+            <span class="author-block">
+              <a href = "https://www.fregu856.com/">Fredrik K. Gustafsson</a>, 
+            <span class="author-block">
+              <a href = "https://jsjol.github.io/">Jens Sjölund</a>, 
+            </span>
+            <span class="author-block">
+              <a href = "https://user.it.uu.se/~thosc112/index.html">Thomas B. Schön</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Uppsala University&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block">Karolinska Institutet</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Algolzw/FoD"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+          </div>
+          <!-- <div class="other-links">
+              <a href="https://colab.research.google.com/github/camenduru/daclip-uir-colab/blob/main/daclip_uir_gradio_colab.ipynb"
+                   class="external-link">
+                  <img src = "https://colab.research.google.com/assets/colab-badge.svg" alt="colab"/>
+              </a>
+              <a href="https://huggingface.co/spaces/fffiloni/DA-CLIP"
+                   class="external-link">
+                  <img src = "https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-blue" alt="huggingface"/>
+              </a>
+              <a href="https://replicate.com/cjwbw/daclip-uir"
+                   class="external-link">
+                  <img src = "https://replicate.com/cjwbw/daclip-uir/badge" alt="replicate"/>
+              </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/teaser.jpg" autoplay muted loop playsinline height="100%">
+      </img>
+      <h2 class="subtitle has-text-centered">
+        <p><span class="dnerf">Forward-<strong>o</strong>nly Diffusion (F<strong>o</strong>D)</span> </p><br/>
+        <p>FoD introduces the mean reversion term <font color="#BB0F12">$\mu - x_t$</font> into both the drift and diffusion functions, enabling high-quality data samples with a single diffusion process.</p>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <img id="teaser" src="./static/images/i7.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-chair-tp">
+          <img id="teaser" src="./static/images/i8.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-shiba">
+          <img id="teaser" src="./static/images/i9.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-fullbody">
+          <img id="teaser" src="./static/images/i10.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-blueshirt">
+          <img id="teaser" src="./static/images/i5.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-mask">
+          <img id="teaser" src="./static/images/i6.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-coffee">
+          <img id="teaser" src="./static/images/i2.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-toby">
+          <img id="teaser" src="./static/images/i1.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-toby">
+          <img id="teaser" src="./static/images/i3.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+        <div class="item item-toby">
+          <img id="teaser" src="./static/images/i4.jpg" autoplay muted loop playsinline height="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Summary</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work presents a forward-only diffusion (FoD) approach for generative modelling. In contrast to traditional diffusion models that rely on a coupled forward-backward diffusion scheme, FoD directly learns data generation through a single forward diffusion process, yielding a simple yet efficient generative framework.
+            The core of FoD is a state-dependent linear stochastic differential equation that involves a mean-reverting term in both the drift and diffusion functions. This mean-reversion property guarantees the convergence to clean data, naturally simulating a stochastic interpolation between source and target distributions. More importantly, FoD is analytically tractable and is trained using a simple stochastic flow matching objective, enabling a few-step non-Markov chain sampling during inference.
+            The proposed FoD model, despite its simplicity, achieves competitive performances on various image-conditioned (e.g., image restoration) and unconditional generation tasks, demonstrating its effectiveness in generative modelling.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper Method. -->
+    <div class="container is-max-desktop is-centered has-text-centered">
+      <div class="container is-four-fifths">
+        <h3 class="title is-4">Forward-only Diffusion Process</h3>
+
+        <h3 class="is-6">$\mathrm{d}x_t = \theta_t \, (\mu - x_t) \mathrm{d}t + \sigma_t (x_t - \mu) \mathrm{d}w_t$</h3>
+        <br/>
+        <p>where $\mu \sim p_\text{data}$ is the clean data and $x_0 \sim p_\text{prior}$ is the source data. The diffusion volatility increases in the beginning steps and then decreases to zero when $x_t$ converges to $\mu$.</p>
+        <br/>
+      </div>
+      <img id="teaser" src="./static/images/process.jpg" autoplay muted loop playsinline height="100%">
+    </div>
+    <!--/ Paper Method. -->
+  </div>
+</section>
+
+<section class="section hero is-light is-small">
+  <div class="container is-max-desktop">
+    <!-- Paper Method. -->
+    <div class="container is-max-desktop is-centered has-text-centered">
+      <div class="container is-four-fifths">
+        <h3 class="title is-4">Stochastic Flow Matching</h3>
+        <p> The FoD process is analytically tractable and follows a multiplicative stochastic structure. We show that this model can be learned by approximating the vector field from each noisy state to the final clean data, called the <strong>Stochastic Flow Matching</strong>: </p>
+        <br/>
+        <h3>$L_\text{SFM}(\phi)=\mathbb{E}_{\mu \sim p_\text{data},x_t \sim p(x_t | x_0, \mu)} [ \| (\mu - x_t) - f_\phi(x_t, t) \|^2 ]$</h3>
+        
+      </div>
+    </div>
+    <!--/ Paper Method. -->
+  </div>
+</section>
+
+<section class="section">
+    <!-- Algorithms. -->
+    <div class="container is-max-desktop has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Algorithms</h2>
+
+        <!-- Algorithms. -->
+        <!-- <h3 class="title is-4">Generating image-text-degradation pairs</h3> -->
+        <div class="content has-text-justified">
+          <p>
+            The standard training and sampling (via the Euler–Maruyama method) procedures are provided in <strong>Algorithm 1</strong> and <strong>Algorithm 2</strong>. In addition, we also provide fast sampling with Markov and non-Markov chains in <strong>Algorithm 3</strong> and <strong>Algorithm 4</strong>.
+          </p>
+        </div>
+        <div class="columns is-vcentered">
+          <div class="column interpolation-video-column">
+            <img id="teaser" src="./static/images/algorithms.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+        <!-- <br/> -->
+        <!--/ Algorithms. -->
+      </div>
+    </div>
+    <!--/ Algorithms. -->
+</section>
+
+<section class="section hero is-light is-small">
+  <div class="container is-max-desktop">
+    <!-- Paper Method. -->
+    <div class="container is-max-desktop is-centered has-text-centered">
+      <div class="container is-four-fifths">
+        <h3 class="title is-4">Learning Mean-reverting ODEs for Unconditional Generation</h3>
+        <p> We consider a deterministic version of FoD, omitting the diffusion term or setting $\sigma_t = 0$ for all times. As a result, we obtain a mean-reverting ODE that transforms source data to target data without the multiplicative noise injection, as </p>
+        <br/>
+        <h3>$\mathrm{d}x_t = \theta_t \, (\mu - x_t) \mathrm{d}{t} \quad \text{with solution} \quad x_t = \bigl(x_s - \mu \bigr) \, e^{-\int_{s}^t \theta_z  \mathrm{d}{z}} + \mu.$</h3>
+        <br/>
+        <p><strong>Note:</strong> Our primary FoD model can be regarded as a stochastic extension of flow matching models.</p>
+      </div>
+    </div>
+    <!--/ Paper Method. -->
+  </div>
+</section>
+
+<section class="section is-light is-small">
+    <!-- Results. -->
+    <div class="container is-max-desktop has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+
+        <!-- Image Restoration. -->
+        <h3 class="title is-4">Image Restoration</h3>
+        <div class="columns is-vcentered", style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="column">
+            <img id="teaser" src="./static/images/ir_results.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+          <br/>
+        </div>
+        <!--/ Image Restoration. -->
+        <br/>
+        <!-- Unconditional Image Generation. -->
+        <h3 class="title is-4">Unconditional Image Generation</h3>
+        <div class="columns is-vcentered", style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="column">
+            <img id="teaser" src="./static/images/unconditional_results.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+        <!--/ Unconditional Image Generation. -->
+        <h3 class="title is-4">Fast Sampling with Markov and non-Markov Chains</h3>
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img id="teaser" src="./static/images/fast_sampling.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Results. -->
+  </div>
+</section>
+
+
+
+<section class="section hero is-light is-small">
+    <div class="container is-max-desktop has-text-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Thanks for your interest!</h3>
+      </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <p>If our code helps your research or work, please consider citing our paper. The following are BibTeX references:</p>
+    <pre><code>@article{luo2025forward,
+  title={Forward-only Diffusion Probabilistic Models},
+  author={Luo, Ziwei and Gustafsson, Fredrik K and Sj{\"o}lund, Jens and Sch{\"o}n, Thomas B},
+  journal={arXiv preprint arXiv:xxx},
+  year={2025}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2310.01018">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/Algolzw/daclip-uir" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This template based on the <a
+              href="https://nerfies.github.io">Nerfies</a> website. If you want to reuse their <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
