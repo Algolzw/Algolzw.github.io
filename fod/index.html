@@ -111,7 +111,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">&nbsp;&nbsp;Uppsala University&nbsp;&nbsp;</span>
-            <span class="author-block">&nbsp;&nbsp;Karolinska Institutet&nbsp;&nbsp;</span>
+            <span class="author-block">&nbsp;&nbsp;University of Oxford&nbsp;&nbsp;</span>
           </div>
 
           <div class="column has-text-centered">
@@ -248,9 +248,7 @@
         <h2 class="title is-3">Summary</h2>
         <div class="content has-text-justified">
           <p>
-            This work presents a forward-only diffusion (FoD) approach for generative modelling. In contrast to traditional diffusion models that rely on a coupled forward-backward diffusion scheme, FoD directly learns data generation through a single forward diffusion process, yielding a simple yet efficient generative framework.
-            The core of FoD is a state-dependent linear stochastic differential equation that involves a mean-reverting term in both the drift and diffusion functions. This mean-reversion property guarantees the convergence to clean data, naturally simulating a stochastic interpolation between source and target distributions. More importantly, FoD is analytically tractable and is trained using a simple stochastic flow matching objective, enabling a few-step non-Markov chain sampling during inference.
-            The proposed FoD model, despite its simplicity, achieves competitive performances on various image-conditioned (e.g., image restoration) and unconditional generation tasks, demonstrating its effectiveness in generative modelling.
+            This work presents a forward-only diffusion (FoD) approach for generative modelling. In contrast to traditional diffusion models that rely on a coupled forward-backward diffusion scheme, FoD directly learns data generation through a single forward diffusion process, yielding a simple yet efficient generative framework. The core of FoD is a state-dependent stochastic differential equation that involves a mean-reverting term in both the drift and diffusion functions. This mean-reversion property guarantees the convergence to clean data, naturally simulating a stochastic interpolation between source and target distributions. More importantly, FoD is analytically tractable and is trained using a simple stochastic flow matching objective, enabling a few-step non-Markov chain sampling during inference. The proposed FoD model—despite its simplicity—achieves state-of-the-art performance on various image restoration tasks. Its general applicability on image-conditioned generation is also demonstrated via qualitative results on image-to-image translation.
           </p>
         </div>
       </div>
@@ -323,14 +321,18 @@
     <!-- Paper Method. -->
     <div class="container is-max-desktop is-centered has-text-centered">
       <div class="container is-four-fifths">
-        <h3 class="title is-4">Learning Mean-reverting ODEs for Unconditional Generation</h3>
-        <p> We consider a deterministic version of FoD, omitting the diffusion term or setting $\sigma_t = 0$ for all times. As a result, we obtain a mean-reverting ODE that transforms source data to target data without the multiplicative noise injection, as </p>
+        <h3 class="title is-4">Connection to Prior Work</h3>
+        <p> <b>Stochastic Interpolants:</b> Let us recall the solution of the FoD process. By setting the initial state to $x_0$ and rearranging the equation, we obtain a stochastic process in the interpolant form: </p>
         <br/>
-        <h3>$\mathrm{d}x_t = \theta_t \, (\mu - x_t) \mathrm{d}{t}$</h3>
-        <br/><p>with solution</p><br/>
-        <h3>$x_t = \bigl(x_s - \mu \bigr) \, e^{-\int_{s}^t \theta_z  \mathrm{d}{z}} + \mu.$</h3>
+        <h3>$x_t = I(t, x_0, \mu) = x_0 \, \alpha_t + \mu \ (1 - \alpha_t), \quad \alpha_t = e^{-\int_0^t \bigl(\theta_z + \frac{1}{2}\sigma_z^2 \bigr) \mathrm{d}{z} + \int_0^t{\sigma}_z {\mathrm{d}{w}_z}}.$</h3>
         <br/>
-        <p><strong>Note:</strong> Our primary FoD model can be regarded as a stochastic extension of flow matching models.</p>
+        <p><i>Note: FoD can be viewed as a powerful instantiation of SI, distinguished by two key properties: multiplicative log-normal interpolation and a state-dependent stochastic path from $x_0$ to $\mu$.</i></p>
+        <br/>
+        <p> <b>Flow Matching:</b> We consider a deterministic version of the FoD process, i.e., omitting the diffusion term or setting $\sigma_t = 0$ for all times. This gives a mean-reverting ODE that bridges two distributions without noise injection: </p>
+        <br/>
+        <h3>$\mathrm{d}{x}_t = \theta_t \, (\mu - x_t) \mathrm{d}{t}, \quad x_t = \bigl(x_s - \mu \bigr) \, e^{-\int_{s}^t \theta_z  \mathrm{d}{z}} + \mu$</h3>
+        <br/>
+        <p><i>Note: Our primary FoD model can be also regarded as a stochastic extension of flow matching models.</i></p>
       </div>
     </div>
     <!--/ Paper Method. -->
@@ -353,19 +355,26 @@
         </div>
         <!--/ Image Restoration. -->
         <br/>
-        <!-- Unconditional Image Generation. -->
-        <h3 class="title is-4">Unconditional Image Generation</h3>
+        <!-- Image-to-Image Translation. -->
+        <h3 class="title is-4">Image-to-Image Translation</h3>
         <div class="columns is-vcentered", style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
           <div class="column">
-            <img id="teaser" src="./static/images/unconditional_results.jpg" autoplay muted loop playsinline height="100%">
+            <img id="teaser" src="./static/images/i2i_results.jpg" autoplay muted loop playsinline height="100%">
           </div>
         </div>
         <br/>
-        <!--/ Unconditional Image Generation. -->
+        <!--/ Fast Sampling. -->
         <h3 class="title is-4">Fast Sampling with Markov and non-Markov Chains</h3>
         <div class="columns is-vcentered">
           <div class="column">
             <img id="teaser" src="./static/images/fast_sampling.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+        <!--/ Noise Injection. -->
+        <h3 class="title is-4">Ablation Experiments on Noise Injection</h3>
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img id="teaser" src="./static/images/noise_injection.jpg" autoplay muted loop playsinline height="100%">
           </div>
         </div>
       </div>
