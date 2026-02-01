@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Self-Rewarding Sequential Monte Carlo for Masked Diffusion Language Models.">
+  <meta name="keywords" content="Diffusion models, masked diffusion language models, sequential Monte Carlo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Self-Rewarding SMC</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://algolzw.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://algolzw.github.io/sr-smc/index.html">
+            SR-SMC
+          </a>
+          <a class="navbar-item" href="https://algolzw.github.io/fod/index.html">
+            FoD
+          </a>
+          <a class="navbar-item" href="https://algolzw.github.io/daclip-uir/index.html">
+            DA-CLIP
+          </a>
+          <a class="navbar-item" href="https://algolzw.github.io/ir-sde/index.html">
+            IR-SDE
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Self-Rewarding Sequential Monte Carlo for Masked Diffusion Language Models</h1>
+          <!-- <h3 class="title is-4 publication-title">ICLR 2024</h3> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href = "https://algolzw.github.io/">Ziwei Luo</a>, 
+            <span class="author-block">
+              <a href = "https://scholar.google.com/citations?user=on-f0-IAAAAJ&hl=en&oi=ao">Ziqi Jin</a>, 
+            <span class="author-block">
+              <a href = "https://demoleiwang.github.io/HomePage">Lei Wang</a>, 
+            </span>
+            <span class="author-block">
+              <a href = "https://lidongbing.github.io/">Lidong Bing</a>, 
+            </span>
+            <span class="author-block">
+              <a href = "https://user.it.uu.se/~thosc112/index.html">Thomas B. Schön</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">&nbsp;&nbsp;Uppsala University&nbsp;&nbsp;</span><br>
+            <span class="author-block">&nbsp;&nbsp;MiroMind AI&nbsp;&nbsp;</span><br>
+            <span class="author-block">&nbsp;&nbsp;Nanyang Technological University&nbsp;&nbsp;</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2505.16733"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Algolzw/self-rewarding-smc"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+          </div>
+          <!-- <div class="other-links">
+              <a href="https://colab.research.google.com/github/camenduru/daclip-uir-colab/blob/main/daclip_uir_gradio_colab.ipynb"
+                   class="external-link">
+                  <img src = "https://colab.research.google.com/assets/colab-badge.svg" alt="colab"/>
+              </a>
+              <a href="https://huggingface.co/spaces/fffiloni/DA-CLIP"
+                   class="external-link">
+                  <img src = "https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-blue" alt="huggingface"/>
+              </a>
+              <a href="https://replicate.com/cjwbw/daclip-uir"
+                   class="external-link">
+                  <img src = "https://replicate.com/cjwbw/daclip-uir/badge" alt="replicate"/>
+              </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/overview.jpg" autoplay muted loop playsinline height="100%">
+      </img>
+      <h2 class="subtitle has-text-centered">
+        <p><span class="dnerf">Self-Rewarding SMC for Masked Diffusion Language Models</span> </p><br/>
+        <p><strong>TL;DR.</strong> Self-Rewarding SMC is an inference-time scaling method that leverages trajectory-level confidence from diffusion models as importance weights to steer generation toward globally confident, high-quality samples.</p>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light is-small">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Summary</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work presents self-rewarding sequential Monte Carlo (SMC), an inference-time scaling algorithm enabling effective sampling of masked diffusion language models (MDLMs). Our algorithm stems from the observation that most existing MDLMs rely on a confidence-based sampling strategy, where only tokens with the highest prediction confidence are preserved at each step. This restricts the generation to a noise-sensitive, greedy decoding paradigm, resulting in an inevitable collapse in the diversity of possible paths. We address this problem by launching multiple interacting diffusion processes in parallel, referred to as \emph{particles}, for trajectory exploration. Importantly, we introduce the trajectory-level confidence as a self-rewarding signal for assigning particle importance weights. During sampling, particles are iteratively weighted and resampled to systematically steer generation towards globally confident, high-quality samples. Our self-rewarding SMC is verified on various masked diffusion language models and benchmarks, achieving significant improvement without extra training or reward guidance, while effectively converting parallel inference capacity into improved sampling quality.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper Method. -->
+    <div class="container is-max-desktop is-centered has-text-centered">
+      <div class="container is-four-fifths">
+        <!-- generative perplexity -->
+        <!-- <h3 class="title is-4">Self-rewarding SMC improves the generative perplexity</h3> -->
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img id="teaser" src="./static/images/results-ppl.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+          <br/>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper Method. -->
+  </div>
+</section>
+
+<section class="section hero is-light is-small">
+  <div class="container is-max-desktop">
+    <!-- Paper Method. -->
+    <div class="container is-max-desktop is-centered has-text-justified">
+      <div class="container is-four-fifths">
+        <h3 class="title is-4">Reformulate the Sampling of Masked Diffusion Models</h3>
+        <p>
+          Given pretrained model $p_\theta(\mathbf{x}_t)$ and a mask set $\mathcal{M}_t \triangleq \{\ell: \mathbf{x}_t(\ell)=\mathtt{[MASK]}\}$ at time $t$. For each token $\mathbf{x}_{t-1}(j)$, we directly define its confidence as the model probability on $j$, as
+        </p>
+        <br/>
+        <h3 class="has-text-centered">$\mathbf{c}_t (j) := p_\theta\big(\hat{\mathbf{x}}_0(j) \mid \mathbf{x}_t \big), \quad j \in \mathcal{M}_t.$</h3>
+        <br/>
+        <div class="content has-text-justified">
+          <strong>Low-confidence remasking:</strong> 1) Top-K $\mathcal{S}_t^{\text{top-k}} = \{\, j\in \mathcal{M}_t:\; \text{Top-}\rho_t \{ \mathbf{c}_t{(j)} \} \,\}$ and 2) Threshold $\mathcal{S}_t^{\text{thr}} = \{\, j\in \mathcal{M}_t:\; \mathbf{c}_t{(j)} \ge \rho_t \,\}.$
+          <br/><br/>
+          <p>
+          In summary, the reverse transition distribution of each token $\mathbf{x}_t (j)$ can be formulated by
+          </p>
+        </div>
+        <h3 class="has-text-centered">
+          $p_\theta(\mathbf{x}_{t-1} (j) \mid \mathbf{x}_t) =
+            \begin{cases}
+                p_\theta(\mathbf{x}_{t-1} (j) \mid \mathbf{x}_t, \hat{\mathbf{x}}_0), & j\in \mathcal{S}_t,\\
+                \mathrm{Cat}(\mathbf{x}_{t-1} (j); \mathbf{m}), & j\in \mathcal{M}_t\setminus \mathcal{S}_t,\\
+                \mathrm{Cat}(\mathbf{x}_{t-1} (j); \mathbf{x}_t), & j\notin \mathcal{M}_t,
+            \end{cases}$
+        </h3>
+        <br/>
+
+        <h3 class="title is-4">Confidence-based Sequential Monte Carlo</h3>
+        <p><strong>Proposition 3.1.</strong> <i>Given a pretrained diffusion model $p_\theta$, let $\{\tilde\pi_t(\mathbf{x}_{t:T})\}_{t=0}^T$ denote the unnormalized path measures defined by a Feynman--Kac recursion. If the sequential proposal in SMC is chosen to be the diffusion transition kernel, i.e., $q_{t-1}(\mathbf{x}_{t-1} \mid \mathbf{x}_t) = K_t(\mathbf{x}_t,\mathbf{x}_{t-1})$, then the incremental importance weights at step $t-1$ is given by</i> </p>
+        <br/>
+        <h3 class="has-text-centered">$\tilde{w}_{t-1}(\mathbf{x}_{t-1:T}) = \prod_{j\in \mathcal{S}_t} \mathbf{c}_t(j),$</h3>
+        <br/>
+        <i>where $\mathbf{c}_t (j) := p_\theta\big(\hat{\mathbf{x}}_0(j) \mid \mathbf{x}_t \big)$ is the token confidence and $\mathcal{S}_t$ denotes the selected mask subset to be updated at step $t$.</i>
+        <p>SMC maintains multiple diffusion processes, called <strong>particles</strong>, to explore the sampling trajectories in parallel. At each iteration, we take three steps: <strong>resample</strong>, <strong>propagate</strong>, and <strong>re-weight</strong>, to perform as an interactive optimization process. Importantly, traditional diffusion sampling only considers token-level confidence, while our algorithm uses the trajectory-level confidence as importance weights to select globally confident outputs.</p>
+      </div>
+    </div>
+    <!--/ Paper Method. -->
+  </div>
+</section>
+
+
+<section class="section is-light is-small">
+    <!-- Results. -->
+    <div class="container is-max-desktop has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-4">Experiments on Diffusion Large language Models (dLLMs)</h2>
+        <!-- <h2 class="title is-4">Evaluation on MDLMs</h2> -->
+
+        <!-- generative perplexity -->
+        <!-- <h3 class="title is-5">Self-rewarding SMC improves the generative perplexity</h3>
+        <div class="columns is-vcentered", style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="column">
+            <img id="teaser" src="./static/images/results-ppl.png" autoplay muted loop playsinline height="100%">
+          </div>
+          <br/>
+        </div> -->
+
+        <!--/ dLLMs -->
+        <br/>
+        <!-- <h2 class="title is-4">Evaluation on dLLMs</h2> -->
+        <!-- dLLMs in math and coding. -->
+        <h3 class="title is-5">Self-rewarding SMC improves dLLMs in math and coding</h3>
+        <div class="columns is-vcentered", style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="column">
+            <img id="teaser" src="./static/images/tab-dllms.png" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+        <br/>
+        <!--/ Fast Sampling. -->
+        <h3 class="title is-5">Overall performance trends as #particle increases</h3>
+        <div class="columns is-vcentered", style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="column">
+            <img id="teaser" src="./static/images/n_particles.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+        <br/>
+        <!--/ Noise Injection. -->
+        <h3 class="title is-5">Effect of Gumbel noise temperature on model performance</h3>
+        <div class="columns is-vcentered", style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="column">
+            <img id="teaser" src="./static/images/temperature.jpg" autoplay muted loop playsinline height="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Results. -->
+  </div>
+</section>
+
+
+
+<section class="section hero is-light is-small">
+    <div class="container is-max-desktop has-text-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Key Innovations</h3>
+        <div class="content has-text-justified">
+        <ul>
+          <li>We propose a general, self-rewarding sequential Monte Carlo algorithm for masked diffusion language models. The proposed method improves sampling without extra training or reward signals.</li>
+          <li>We unify the sampling and remasking strategy of MDLMs from the probabilistic perspective, and theoretically show that the trajectory-level confidence is naturally a self-rewarding signal for SMC.</li>
+          <li>Extensive experiments and analysis demonstrate our self-rewarding SMC improves sample quality on different pretrained models and benchmarks.</li>
+        </ul>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <p>If our code helps your research or work, please consider citing our paper. The following are BibTeX references:</p>
+    <pre><code>@article{luo2026self,
+  title={Self-Rewarding Sequential Monte Carlo for Masked Diffusion Language Models},
+  author={Luo, Ziwei and Jin, Ziqi and Lei, Wang and Bing, Lidong and Sch{\"o}n, Thomas B},
+  journal={arXiv preprint arXiv:2506.xxxx},
+  year={2026}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/Algolzw/self-rewarding-smc" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This template based on the <a
+              href="https://nerfies.github.io">Nerfies</a> website. If you want to reuse their <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
