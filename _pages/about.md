@@ -46,7 +46,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 **Forward-only Diffusion Probabilistic Models**  
 <u>Ziwei Luo</u>, Fredrik K. Gustafsson, Jens Sjölund, Thomas B. Schön
 
-**<font color = "#224B8D">Preprint</font>** \| [Paper](https://arxiv.org/abs/2505.16733) \| [Code](https://github.com/Algolzw/FoD) [![GitHub stars](https://img.shields.io/github/stars/Algolzw/FoD?style=social)](https://github.com/Algolzw/FoD)
+**<font color = "#224B8D">Preprint</font>** \| [Paper](https://arxiv.org/abs/2505.16733) \| [Project](https://algolzw.github.io/fod/index.html)  \| [Code](https://github.com/Algolzw/FoD) [![Stars](https://img.shields.io/github/stars/Algolzw/FoD)](https://github.com/Algolzw/FoD)
 - This work introduces the mean reversion term into both the drift and diffusion functions, enabling high-quality data samples with a single diffusion process.
 - A stochastic extension of flow matching.
 </div>
@@ -90,7 +90,7 @@ Ruoqi Zhang$^\dagger$, <u>Ziwei Luo</u>$^\dagger$, Jens Sjölund, Thomas B. Sch�
 **Controlling Vision-Language Models for Multi-Task Image Restoration**  
 <u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
 
-**<font color = "#224B8D">ICLR 2024</font>** \| [Paper](https://arxiv.org/abs/2310.01018) \| [Code](https://github.com/Algolzw/daclip-uir) \| [Project](https://algolzw.github.io/daclip-uir/index.html) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+**<font color = "#224B8D">ICLR 2024</font>** \| [Paper](https://arxiv.org/abs/2310.01018) \| [Project](https://algolzw.github.io/daclip-uir/index.html) \| [Code](https://github.com/Algolzw/daclip-uir) [![Stars](https://img.shields.io/github/stars/Algolzw/daclip-uir)](https://github.com/Algolzw/daclip-uir) 
 - This work presents a degradation-aware vision-language model (DA-CLIP) for multi-task image restoration.
 - A controller predicts degradation types and also adapts the fixed CLIP image encoder to predict high-quality feature embeddings.
 </div>
@@ -105,7 +105,7 @@ Ruoqi Zhang$^\dagger$, <u>Ziwei Luo</u>$^\dagger$, Jens Sjölund, Thomas B. Sch�
 **Image Restoration with Mean-Reverting Stochastic Differential Equations**  
 <u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
 
-**<font color = "#224B8D">ICML 2023</font>** \| [Paper](https://arxiv.org/abs/2301.11699) \| [Code](https://github.com/Algolzw/image-restoration-sde) \| [Project](https://algolzw.github.io/ir-sde/index.html) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+**<font color = "#224B8D">ICML 2023</font>** \| [Paper](https://arxiv.org/abs/2301.11699) \| [Project](https://algolzw.github.io/ir-sde/index.html) \| [Code](https://github.com/Algolzw/image-restoration-sde) [![Stars](https://img.shields.io/github/stars/Algolzw/image-restoration-sde)](https://github.com/Algolzw/image-restoration-sde)  
 - This work presents a stochastic differential equation (SDE) approach for general-purpose image restoration.
 - A maximum likelihood objective is proposed to learn an optimal reverse trajectory which stabilizes the training and improves accuracy.
 </div>
@@ -119,7 +119,7 @@ Ruoqi Zhang$^\dagger$, <u>Ziwei Luo</u>$^\dagger$, Jens Sjölund, Thomas B. Sch�
 **Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models**  
 <u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
 
-**<font color = "#224B8D">CVPRW 2023</font>** \| [Paper](https://arxiv.org/abs/2304.08291) \| [Code](https://github.com/Algolzw/image-restoration-sde) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+**<font color = "#224B8D">CVPRW 2023</font>** \| [Paper](https://arxiv.org/abs/2304.08291) \| [Code](https://github.com/Algolzw/image-restoration-sde) [![Stars](https://img.shields.io/github/stars/Algolzw/image-restoration-sde)](https://github.com/Algolzw/image-restoration-sde)
 - <span style="color:red">**Winning solution**</span> of the NTIRE Image Shadow Removal Challenge 2023.
 - An extention of the [IR-SDE](https://arxiv.org/abs/2301.11699).
 </div>
@@ -146,7 +146,7 @@ Ruoqi Zhang$^\dagger$, <u>Ziwei Luo</u>$^\dagger$, Jens Sjölund, Thomas B. Sch�
 **Deep Constrained Least Squares for Blind Image Super-Resolution**  
 <u>Ziwei Luo</u>, Haibin Huang, Lei Yu, Youwei Li, Haoqiang Fan, Shuaicheng Liu
 
-**<font color = "#224B8D">CVPR 2022</font>** \| [Paper](https://arxiv.org/pdf/2202.07508) \| [Code](https://github.com/megvii-research/DCLS-SR) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+**<font color = "#224B8D">CVPR 2022</font>** \| [Paper](https://arxiv.org/pdf/2202.07508) \| [Code](https://github.com/megvii-research/DCLS-SR) 
 - This work proposes to disentangle deblurring and upsampling in blind super-resolution, and provides a theoretical guidance to make use of the kernel.
 <!-- - A deep constrained least square filtering module is applied in the feature space to generate clean features based on the estimated kernel. -->
 </div>
