@@ -25,30 +25,49 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 
 # 🔥 News
+- *2025.6*: &nbsp;🎉🎉 One paper was published in *Philosophical Transactions of the Royal Society A*.
 - *2024.11*: &nbsp;🎉🎉 I was selected as a **Top Reviewer** in NeurIPS 2024.
-- *2024.09*: &nbsp;🎉🎉 One paper is accepted by Advances in Neural Information Processing Systems (**NeurIPS 2024**).
-- *2024.01*: &nbsp;🎉🎉 One paper is accepted by International Conference on Learning Representations (**ICLR 2024**).
-- *2023.04*: &nbsp;🎉🎉 One paper is accepted by International Conference on Machine Learning (**ICML 2023**).
-- *2023.04*: &nbsp;🎉🎉 We win 2nd place in the NTIRE 2023 Shadow Removal Challenge (**1st place on perceptual scores**).
-- *2022.04*: &nbsp;🎉🎉 We win 1st place in the NTIRE 2022 Burst Super-Resolution Challenge (Real-World Track). 
-- *2022.03*: &nbsp;🎉🎉 One paper is accepted by IEEE Conference on Computer Vision and Pattern Recognition (**CVPR 2022**). 
+- *2024.09*: &nbsp;🎉🎉 One paper was accepted by Advances in Neural Information Processing Systems (**NeurIPS 2024**).
+- *2024.01*: &nbsp;🎉🎉 One paper was accepted by International Conference on Learning Representations (**ICLR 2024**).
+- *2023.04*: &nbsp;🎉🎉 One paper was accepted by International Conference on Machine Learning (**ICML 2023**).
+- *2023.04*: &nbsp;🎉🎉 We won 2nd place in the NTIRE 2023 Shadow Removal Challenge (**1st place on perceptual scores**).
+- *2022.04*: &nbsp;🎉🎉 We won 1st place in the NTIRE 2022 Burst Super-Resolution Challenge (Real-World Track). 
+- *2022.03*: &nbsp;🎉🎉 One paper was accepted by IEEE Conference on Computer Vision and Pattern Recognition (**CVPR 2022**). 
 <!--- *2021.12*: &nbsp;🎉🎉 One paper is accepted by AAAI Conference on Artificial Intelligence (AAAI 2022). -->
  
 
-# 📝 Publications 
+# 📝 Selected Publications 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><img src='images/500x300.png' alt="sym" width="100%"></div>
+## Preprints
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/fod.jpg' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf), **Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Forward-only Diffusion Probabilistic Models**  
+<u>Ziwei Luo</u>, Fredrik K. Gustafsson, Jens Sjölund, Thomas B. Schön
 
-**CVPR, 2022** \| [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+**<font color = "#224B8D">Preprint</font>** \| [Paper](https://arxiv.org/abs/2505.16733) \| [Code](https://github.com/Algolzw/FoD) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+- This work introduces the mean reversion term into both the drift and diffusion functions, enabling high-quality data samples with a single diffusion process.
+- A stochastic extension of flow matching.
 </div>
-</div> -->
+</div>
 
 <!-- ###################################################### -->
 
+## Peer-reviewed Publications
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/diffusion-review.jpg' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Taming diffusion models for image restoration: a review**  
+<u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
+
+**<font color = "#224B8D">Philosophical Transactions A 2025</font>** \| [Paper](https://royalsocietypublishing.org/rsta/article/383/2299/20240358/234771/Taming-diffusion-models-for-image-restoration-a) \|
+- This work summarizes key constructions in diffusions and survey contemporary techniques that make use of diffusion models in solving general image restoration tasks.
+</div>
+</div>
+
+<!-- ###################################################### -->
 
 <div class='paper-box'><div class='paper-box-image'><img src='images/diffusion-policy.png' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
