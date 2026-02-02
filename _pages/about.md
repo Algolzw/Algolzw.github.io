@@ -46,7 +46,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 **Forward-only Diffusion Probabilistic Models**  
 <u>Ziwei Luo</u>, Fredrik K. Gustafsson, Jens Sjölund, Thomas B. Schön
 
-**<font color = "#224B8D">Preprint</font>** \| [Paper](https://arxiv.org/abs/2505.16733) \| [Code](https://github.com/Algolzw/FoD) <strong><span class='show_paper_citations' data='3WQTKocAAAAJ:WF5omc3nYNoC'></span></strong>
+**<font color = "#224B8D">Preprint</font>** \| [Paper](https://arxiv.org/abs/2505.16733) \| [Code](https://github.com/Algolzw/FoD) [![GitHub stars](https://img.shields.io/github/stars/Algolzw/FoD?style=social)](https://github.com/Algolzw/FoD)
 - This work introduces the mean reversion term into both the drift and diffusion functions, enabling high-quality data samples with a single diffusion process.
 - A stochastic extension of flow matching.
 </div>
@@ -62,7 +62,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 **Taming diffusion models for image restoration: a review**  
 <u>Ziwei Luo</u>, Fredrik K. Gustafsson, Zheng Zhao, Jens Sjölund, Thomas B. Schön
 
-**<font color = "#224B8D">Philosophical Transactions A 2025</font>** \| [Paper](https://royalsocietypublishing.org/rsta/article/383/2299/20240358/234771/Taming-diffusion-models-for-image-restoration-a) \|
+**<font color = "#224B8D">Philosophical Transactions A 2025</font>** \| [Paper](https://royalsocietypublishing.org/rsta/article/383/2299/20240358/234771/Taming-diffusion-models-for-image-restoration-a)
 - This work summarizes key constructions in diffusions and survey contemporary techniques that make use of diffusion models in solving general image restoration tasks.
 </div>
 </div>
