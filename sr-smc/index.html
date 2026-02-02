@@ -73,7 +73,7 @@
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item" href="https://algolzw.github.io/sr-smc/index.html">
-            SR-SMC
+            Self-Rewarding SMC
           </a>
           <a class="navbar-item" href="https://algolzw.github.io/fod/index.html">
             FoD
@@ -343,9 +343,18 @@
         <h3 class="title is-4">Key Innovations</h3>
         <div class="content has-text-justified">
         <ul>
-          <li>We propose a general, self-rewarding sequential Monte Carlo algorithm for masked diffusion language models. The proposed method improves sampling without extra training or reward signals.</li>
-          <li>We unify the sampling and remasking strategy of MDLMs from the probabilistic perspective, and theoretically show that the trajectory-level confidence is naturally a self-rewarding signal for SMC.</li>
-          <li>Extensive experiments and analysis demonstrate our self-rewarding SMC improves sample quality on different pretrained models and benchmarks.</li>
+          <li>
+            <strong>Self-rewarding SMC at inference time.</strong>
+            We introduce a general sequential Monte Carlo framework for masked diffusion language models that improves sampling quality without additional training or external reward models.
+          </li>
+          <li>
+            <strong>Trajectory-level confidence as an intrinsic reward.</strong>
+            From a probabilistic perspective, we reinterpret MDLM sampling and remasking, showing that trajectory confidence naturally provides a self-rewarding signal for particle weighting.
+          </li>
+          <li>
+            <strong>Consistent gains across models and tasks.</strong>
+            Experiments on multiple pretrained MDLMs and diffusion LLMs demonstrate improved sample quality on a range of benchmarks.
+          </li>
         </ul>
         </div>
       </div>
