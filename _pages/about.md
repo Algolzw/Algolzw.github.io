@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD student in Machine Learning supervised by [Thomas Schön](https://user.it.uu.se/~thosc112/) and co-supervised by [Jens Sjölund](https://jsjol.github.io/) and [Fredrik K. Gustafsson](https://www.fregu856.com/) at [Uppsala University](https://www.uu.se/en). My research interest generally includes **Machine Learning**, **Computer Vision**, and **Reinforcement Learning**. And my recent works mainly focus on Probabilistic deep learning with application in computer vision.
+I am a PhD student in Machine Learning supervised by [Thomas Schön](https://user.it.uu.se/~thosc112/) and co-supervised by [Jens Sjölund](https://jsjol.github.io/) and [Fredrik K. Gustafsson](https://www.fregu856.com/) at [Uppsala University](https://www.uu.se/en). My research interest generally includes **Machine Learning**, **Computer Vision**, and **Reinforcement Learning**. And my recent works mainly focus on Probabilistic deep learning with application in computer vision and language modeling.
 
 I received my Master of Engineering degree from the School of Computer Science, Chengdu University of Information Technology, advised by [Jing Hu](https://jsjxy.cuit.edu.cn/info/1063/1806.htm). During the school, I participated in the project of performing image registration via reinforcement learning, under the advising of [Xin Wang](https://scholar.google.com/citations?user=jUWx8fcAAAAJ) and [Siwei Lyu](https://cse.buffalo.edu/~siweilyu/) from the University at Buffalo, SUNY. Before that, I obtained the Bachelor degree from Hebei University of Technology. I had been a research assistant at Megvii Technology Ltd., China, working with [Shuaicheng Liu](http://www.liushuaicheng.org/).
 
@@ -39,6 +39,20 @@ I received my Master of Engineering degree from the School of Computer Science, 
 # 📝 Selected Publications 
 
 ## Preprints
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/sr-smc.jpg' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Self-Rewarding Sequential Monte Carlo for Masked Diffusion Language Models**  
+<u>Ziwei Luo</u>, Ziqi Jin, Lei Wang, Lidong Bing, Thomas B. Schön
+
+**<font color = "#224B8D">Preprint</font>** \| [Paper](https://arxiv.org/abs/2602.01849) \| [Project](https://algolzw.github.io/sr-smc/index.html)  \| [Code](https://github.com/Algolzw/self-rewarding-smc)
+- This work introduces an inference-time scaling method that leverages trajectory-level confidence from diffusion models as importance weights to steer generation toward globally confident, high-quality samples.
+- Self-Rewarding SMC is reward-free and thus can be applied to arbitrary pretrained models and tasks.
+</div>
+</div>
+
+<!-- ###################################################### -->
 
 <div class='paper-box'><div class='paper-box-image'><img src='images/fod.jpg' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
