@@ -25,7 +25,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 
 # 🔥 News
-- *2025.06*: &nbsp;🎉🎉 One paper was published in *Philosophical Transactions of the Royal Society A*.
+- *2025.06*: &nbsp;🎉🎉 Two papers were published in *Philosophical Transactions of the Royal Society A*.
 - *2024.11*: &nbsp;🎉🎉 I was selected as a **Top Reviewer** in NeurIPS 2024.
 - *2024.09*: &nbsp;🎉🎉 One paper was accepted by Advances in Neural Information Processing Systems (**NeurIPS 2024**).
 - *2024.01*: &nbsp;🎉🎉 One paper was accepted by International Conference on Learning Representations (**ICLR 2024**).
