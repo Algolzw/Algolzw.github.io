@@ -48,7 +48,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 **Self-Rewarding Sequential Monte Carlo for Masked Diffusion Language Models**  
 <u>Ziwei Luo</u>, Ziqi Jin, Lei Wang, Lidong Bing, Thomas B. Schön
 
-**<font color = "#224B8D">NeurIPS 2024</font>** \| [Paper](https://arxiv.org/abs/2602.01849) \| [Project](https://algolzw.github.io/sr-smc/index.html)  \| [Code](https://github.com/Algolzw/self-rewarding-smc)
+**<font color = "#224B8D">NeurIPS 2026</font>** \| [Paper](https://arxiv.org/abs/2602.01849) \| [Project](https://algolzw.github.io/sr-smc/index.html)  \| [Code](https://github.com/Algolzw/self-rewarding-smc)
 - This work introduces an inference-time scaling method that leverages trajectory-level confidence from diffusion models as importance weights to steer generation toward globally confident, high-quality samples.
 - Self-Rewarding SMC is reward-free and thus can be applied to arbitrary pretrained models and tasks.
 </div>
