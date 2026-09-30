@@ -25,6 +25,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 
 # 🔥 News
+- *2026.09*: &nbsp;🎉🎉 Two papers were accepted by Advances in Neural Information Processing Systems (**NeurIPS 2026**).
 - *2025.06*: &nbsp;🎉🎉 Two papers were published in *Philosophical Transactions of the Royal Society A*.
 - *2024.11*: &nbsp;🎉🎉 I was selected as a **Top Reviewer** in NeurIPS 2024.
 - *2024.09*: &nbsp;🎉🎉 One paper was accepted by Advances in Neural Information Processing Systems (**NeurIPS 2024**).
@@ -38,7 +39,8 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 # 📝 Selected Publications 
 
-## Preprints
+
+## Peer-reviewed Publications
 
 <div class='paper-box'><div class='paper-box-image'><img src='images/sr-smc.jpg' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
@@ -46,7 +48,7 @@ I received my Master of Engineering degree from the School of Computer Science, 
 **Self-Rewarding Sequential Monte Carlo for Masked Diffusion Language Models**  
 <u>Ziwei Luo</u>, Ziqi Jin, Lei Wang, Lidong Bing, Thomas B. Schön
 
-**<font color = "#224B8D">Preprint</font>** \| [Paper](https://arxiv.org/abs/2602.01849) \| [Project](https://algolzw.github.io/sr-smc/index.html)  \| [Code](https://github.com/Algolzw/self-rewarding-smc)
+**<font color = "#224B8D">NeurIPS 2024</font>** \| [Paper](https://arxiv.org/abs/2602.01849) \| [Project](https://algolzw.github.io/sr-smc/index.html)  \| [Code](https://github.com/Algolzw/self-rewarding-smc)
 - This work introduces an inference-time scaling method that leverages trajectory-level confidence from diffusion models as importance weights to steer generation toward globally confident, high-quality samples.
 - Self-Rewarding SMC is reward-free and thus can be applied to arbitrary pretrained models and tasks.
 </div>
@@ -57,18 +59,16 @@ I received my Master of Engineering degree from the School of Computer Science, 
 <div class='paper-box'><div class='paper-box-image'><img src='images/fod.jpg' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
 
-**Forward-only Diffusion Probabilistic Models**  
+**Efficient Image Restoration with State-Dependent Forward Diffusion**  
 <u>Ziwei Luo</u>, Fredrik K. Gustafsson, Jens Sjölund, Thomas B. Schön
 
-**<font color = "#224B8D">Preprint</font>** \| [Paper](https://arxiv.org/abs/2505.16733) \| [Project](https://algolzw.github.io/fod/index.html)  \| [Code](https://github.com/Algolzw/FoD) [![Stars](https://img.shields.io/github/stars/Algolzw/FoD)](https://github.com/Algolzw/FoD)
+**<font color = "#224B8D">TMLR 2026</font>** \| [Paper](https://openreview.net/forum?id=Eq9k6Va3hY) \| [Project](https://algolzw.github.io/fod/index.html)  \| [Code](https://github.com/Algolzw/FoD) [![Stars](https://img.shields.io/github/stars/Algolzw/FoD)](https://github.com/Algolzw/FoD)
 - This work introduces the mean reversion term into both the drift and diffusion functions, enabling high-quality data samples with a single diffusion process.
 - A stochastic extension of flow matching.
 </div>
 </div>
 
 <!-- ###################################################### -->
-
-## Peer-reviewed Publications
 
 <div class='paper-box'><div class='paper-box-image'><img src='images/diffusion-review.jpg' alt="sym" width="100%"></div>
 <div class='paper-box-text' markdown="1">
