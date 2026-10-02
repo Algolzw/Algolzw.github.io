@@ -26,12 +26,12 @@ I received my Master of Engineering degree from the School of Computer Science, 
 
 # 🔥 News
 - *2026.09*: &nbsp;🎉🎉 Two papers were accepted by Advances in Neural Information Processing Systems (**NeurIPS 2026**).
+- *2026.08*: &nbsp;🎉🎉 One papers was accepted by Transactions on Machine Learning Research (**TMLR 2026**).
 - *2025.06*: &nbsp;🎉🎉 Two papers were published in *Philosophical Transactions of the Royal Society A*.
 - *2024.11*: &nbsp;🎉🎉 I was selected as a **Top Reviewer** in NeurIPS 2024.
 - *2024.09*: &nbsp;🎉🎉 One paper was accepted by Advances in Neural Information Processing Systems (**NeurIPS 2024**).
 - *2024.01*: &nbsp;🎉🎉 One paper was accepted by International Conference on Learning Representations (**ICLR 2024**).
 - *2023.04*: &nbsp;🎉🎉 One paper was accepted by International Conference on Machine Learning (**ICML 2023**).
-- *2023.04*: &nbsp;🎉🎉 We won 2nd place in the NTIRE 2023 Shadow Removal Challenge (**1st place on perceptual scores**).
 - *2022.04*: &nbsp;🎉🎉 We won 1st place in the NTIRE 2022 Burst Super-Resolution Challenge (Real-World Track). 
 - *2022.03*: &nbsp;🎉🎉 One paper was accepted by IEEE Conference on Computer Vision and Pattern Recognition (**CVPR 2022**). 
 <!--- *2021.12*: &nbsp;🎉🎉 One paper is accepted by AAAI Conference on Artificial Intelligence (AAAI 2022). -->
@@ -227,6 +227,7 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💬 Teaching 
+- Teaching Assistant in the course *Deep Learning*, at Uppsala University
 - Teaching Assistant in the course *Advanced Probabilistic Machine Learning*, at Uppsala University
 - Teaching Assistant in the course *Statistical Machine Learning*, at Uppsala University
 - Teaching Assistant in the course *Foundations of Computer Science*, at Chengdu University of Information Technology
@@ -240,9 +241,9 @@ Jing Hu, <u>Ziwei Luo</u>, Xin Wang, Shanhui Sun, Youbing Yin, Kunlin Cao, Qi So
 
 ### Conference Reviewer
 - International Conference on Intelligent Robots and Systems (IROS) 2022
-- IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024
-- Advances in Neural Information Processing Systems (NeurIPS) 2024
-- International Conference on Learning Representations (ICLR) 2024
+- IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024,2025,2026
+- Advances in Neural Information Processing Systems (NeurIPS) 2024,2025,2026
+- International Conference on Learning Representations (ICLR) 2024,2025,2026
 
 # 💻 Experience
 - *2022.09 - present*, PhD student, at [Uppsala university](https://www.uu.se/en), Sweden.
