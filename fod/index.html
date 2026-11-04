@@ -192,10 +192,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" src="./static/images/teaser.jpg" autoplay muted loop playsinline height="100%">
+      <img id="teaser" src="./static/images/teaser.png" autoplay muted loop playsinline height="100%">
       </img>
       <h2 class="subtitle has-text-centered">
-        <p><span class="dnerf">Forward-<strong>o</strong>nly Diffusion (F<strong>o</strong>D)</span> </p><br/>
+        <p>State-Dependent <span class="dnerf"><strong>Fo</strong>orward <strong>D</strong>iffusion (<strong>FoD</strong>)</span> </p><br/>
         <p>FoD introduces the mean reversion term <font color="#BB0F12">$\mu - x_t$</font> into both the drift and diffusion functions, enabling high-quality data samples with a single diffusion process.</p>
       </h2>
     </div>
@@ -251,7 +251,7 @@
         <h2 class="title is-3">Summary</h2>
         <div class="content has-text-justified">
           <p>
-            This work presents a forward-only diffusion (FoD) approach for generative modelling. In contrast to traditional diffusion models that rely on a coupled forward-backward diffusion scheme, FoD directly learns data generation through a single forward diffusion process, yielding a simple yet efficient generative framework. The core of FoD is a state-dependent stochastic differential equation that involves a mean-reverting term in both the drift and diffusion functions. This mean-reversion property guarantees the convergence to clean data, naturally simulating a stochastic interpolation between source and target distributions. More importantly, FoD is analytically tractable and is trained using a simple stochastic flow matching objective, enabling a few-step non-Markov chain sampling during inference. The proposed FoD model—despite its simplicity—achieves state-of-the-art performance on various image restoration tasks. Its general applicability on image-conditioned generation is also demonstrated via qualitative results on image-to-image translation.
+            This paper proposes to perform image restoration through a state-dependent mean-reverting \textbf{fo}rward \textbf{d}iffusion (FoD) process. In contrast to traditional diffusion-based approaches that rely on a coupled forward-backward diffusion scheme, FoD directly learns image restoration through a single forward diffusion process, yielding a simple yet efficient framework. The core of FoD is a state-dependent stochastic differential equation (SDE) that involves a mean-reverting term in both the drift and diffusion functions. This mean-reverting structure drives the low-quality data toward the clean endpoint with controlled stochastic variation, therefore simulating a stochastic interpolation between source and target distributions. More importantly, FoD is analytically tractable and is trained using a simple stochastic flow matching objective, enabling few-step sampling during inference. The proposed FoD model, despite its simplicity, achieves strong overall performance on various image restoration tasks compared to representative diffusion, diffusion bridge, and flow matching approaches.
           </p>
         </div>
       </div>
@@ -265,7 +265,7 @@
     <!-- Paper Method. -->
     <div class="container is-max-desktop is-centered has-text-centered">
       <div class="container is-four-fifths">
-        <h3 class="title is-4">Forward-only Diffusion Process</h3>
+        <h3 class="title is-4">State-Dependent Forward Diffusion Process</h3>
 
         <h3 class="is-6">$\mathrm{d}x_t = \theta_t \, (\mu - x_t) \mathrm{d}t + \sigma_t (x_t - \mu) \mathrm{d}w_t$</h3>
         <br/>
